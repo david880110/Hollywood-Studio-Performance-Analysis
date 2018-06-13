@@ -9,3 +9,4 @@
 
 ## Data Sources
 * [Box Office Mojo](http://www.boxofficemojo.com/)
+* [OMDB API](http://www.omdbapi.com)
