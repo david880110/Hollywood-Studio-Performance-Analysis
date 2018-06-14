@@ -1,4 +1,5 @@
 # Project-2
+![alt text](https://www.screengeek.net/wp-content/uploads/2017/04/avengers-4.png)
 * [Proposal - Draft](https://docs.google.com/document/d/1N4zQhVNANNn9Fwe6zHKXopqd9Daxmg_cvEEoG69-sF4/edit)
 
 ## Members:
