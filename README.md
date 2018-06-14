@@ -1,4 +1,5 @@
 # Project-2
+* [Proposal - Draft](https://docs.google.com/document/d/1N4zQhVNANNn9Fwe6zHKXopqd9Daxmg_cvEEoG69-sF4/edit)
 
 ## Members:
 * [David Gu](https://www.linkedin.com/in/aram-hovasapyan-181b8a81/)
