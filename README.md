@@ -2,8 +2,13 @@
 ![alt text](https://www.screengeek.net/wp-content/uploads/2017/04/avengers-4.png)
 * [Proposal - Draft](https://docs.google.com/document/d/1N4zQhVNANNn9Fwe6zHKXopqd9Daxmg_cvEEoG69-sF4/edit)
 
+## Proposal:
+* Find out the market share of each studio
+* Find out the highest performing movie of the highest performing studio
+* Find out how many oscar winning movies over time 
+
 ## Members:
-* [David Gu](https://www.linkedin.com/in/aram-hovasapyan-181b8a81/)
+* [David Gu](https://www.linkedin.com/in/thatmandavid-gu-a0806b5a/)
 * [Lindsay Yan](https://www.linkedin.com/in/lindsay-yan-8a09469b/)
 * [Sean Yu](https://www.linkedin.com/in/sean-yu-733205a6/)
 * [Sonia Yang](https://www.linkedin.com/in/sonia-yang-69504438/)
