@@ -4,9 +4,9 @@
 
 ## Proposal:
 * Find out the market share of each studio
-* Find out the highest performing movie of the highest performing studio
 * Find out how many oscar winning movies over time 
 * Find how many oscar winning directors they worked with 
+* Find out the highest performing movie of the highest performing studio and its performance internationally
 
 ## Members:
 * [David Gu](https://www.linkedin.com/in/thatmandavid-gu-a0806b5a/)
