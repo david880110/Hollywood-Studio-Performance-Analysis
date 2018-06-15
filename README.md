@@ -1,5 +1,5 @@
 # Project-2
-![alt text](https://www.screengeek.net/wp-content/uploads/2017/04/avengers-4.png)
+![alt text](http://econlife.com/wp-content/uploads/2014/07/Suply-and-demand-movie-theater-seats.jpg..jpg)
 * [Proposal - Draft](https://docs.google.com/document/d/1N4zQhVNANNn9Fwe6zHKXopqd9Daxmg_cvEEoG69-sF4/edit)
 
 ## Proposal:
