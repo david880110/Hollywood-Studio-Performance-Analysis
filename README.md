@@ -16,6 +16,7 @@
 * [Tsering Sherpa](https://www.linkedin.com/in/tsering-sherpa-1171a7b4/)
 
 ## Technology Stack Used:
+* SQL
 * Python
 * Javascrpit
 * html/css/leaflet
