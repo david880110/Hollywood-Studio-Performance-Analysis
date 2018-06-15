@@ -9,6 +9,11 @@
 * [Sonia Yang](https://www.linkedin.com/in/sonia-yang-69504438/)
 * [Tsering Sherpa](https://www.linkedin.com/in/tsering-sherpa-1171a7b4/)
 
+## Technology Stack Used:
+* Python
+* Javascrpit
+* html/css/leaflet
+
 ## Data Sources
 * [Box Office Mojo](http://www.boxofficemojo.com/)
 * [OMDB API](http://www.omdbapi.com)
