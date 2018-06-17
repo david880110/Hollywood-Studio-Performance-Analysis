@@ -29,6 +29,29 @@
 </div>
 
 
+<div class="row">
+  <div class="firstcolumn">
+  
+ 
+  <div id="myDiv2" class="column"></div>
+<!--  <div id="myDiv2" class="column2"></div> -->
+</div>
+
+</div>
+
+
+
+
+<div class="row">
+  <div class="firstcolumn">
+  
+ 
+  <div id="myDiv3" class="column"></div>
+<!--  <div id="myDiv2" class="column2"></div> -->
+</div>
+
+</div>
+
 
 
 </body>
@@ -39,7 +62,6 @@
 <script>  
 
 
-//Sales Change
 var studio_FOX=[];
 var studio_BV=[];
 var studio_Uni=[];
@@ -47,14 +69,41 @@ var studio_Par=[];
 var studio_WB=[];
 var studio_Sony=[];
 
+var score_FOX=[];
+var score_BV=[];
+var score_Uni=[];
+var score_Par=[];
+var score_WB=[];
+var score_Sony=[];
 
 
-////Load Sales Data in 
+var oscar_FOX=[];
+var oscar_BV=[];
+var oscar_Uni=[];
+var oscar_Par=[];
+var oscar_WB=[];
+var oscar_Sony=[];
+
+
+////Load Data in 
 var loadFile1 = $.ajax({
   url: '/sales',
   async: true,
   dataType: 'json',
 }).done(successFunction_sales);
+
+
+var loadFile2 = $.ajax({
+  url: '/score',
+  async: true,
+  dataType: 'json',
+}).done(successFunction_score);
+
+var loadFile_oscar = $.ajax({
+  url: '/oscar',
+  async: true,
+  dataType: 'json',
+}).done(successFunction_oscar);
 
 
 
@@ -89,6 +138,66 @@ function successFunction_sales(data) {
  
 }
 
+function successFunction_score(data) {
+  var allRows = data
+ 
+  for (var singleRow = 0; singleRow < allRows.length; singleRow++) {
+    if (data[singleRow]['Studio']=='Fox'){
+      score_FOX.push(data[singleRow])
+    }
+    if (data[singleRow]['Studio']=='WB'){
+      score_WB.push(data[singleRow])
+    }
+    if (data[singleRow]['Studio']=='BV'){
+      score_BV.push(data[singleRow])
+    }
+    if (data[singleRow]['Studio']=='Paramount'){
+      score_Par.push(data[singleRow])
+    }
+    if (data[singleRow]['Studio']=='Sony'){
+      score_Sony.push(data[singleRow])
+    }
+    if (data[singleRow]['Studio']=='Universal'){
+      score_Uni.push(data[singleRow])
+    }
+
+  }
+  //alert(studio_FOX[0])
+  draw_score();
+//Select data
+ 
+}
+
+
+function successFunction_oscar(data) {
+  var allRows = data
+ 
+  for (var singleRow = 0; singleRow < allRows.length; singleRow++) {
+    if (data[singleRow]['Studio']=='Fox'){
+      oscar_FOX.push(data[singleRow])
+    }
+    if (data[singleRow]['Studio']=='WB'){
+      oscar_WB.push(data[singleRow])
+    }
+    if (data[singleRow]['Studio']=='BV'){
+      oscar_BV.push(data[singleRow])
+    }
+    if (data[singleRow]['Studio']=='Paramount'){
+      oscar_Par.push(data[singleRow])
+    }
+    if (data[singleRow]['Studio']=='Sony'){
+      oscar_Sony.push(data[singleRow])
+    }
+    if (data[singleRow]['Studio']=='Universal'){
+      oscar_Uni.push(data[singleRow])
+    }
+
+  }
+  //alert(studio_FOX[0])
+  draw_oscar();
+//Select data
+ 
+}
 
 
 
@@ -206,6 +315,262 @@ function draw(){
 ///////////////////////////////////////////////////////////////////////////////////
 }
 
+
+
+
+function draw_score(){
+
+  var Year=[];
+  var BV_score=[];
+  var FOX_score2=[];
+  var FOX_score=[];
+  var Uni_score=[];
+  var Uni_score2=[];
+  var WB_score=[];
+  var WB_score2=[];
+  var Par_score=[];
+  var Par_score2=[];
+  var Sony_score=[];
+  var Sony_score2=[];
+  //var studio_Total=[];
+
+
+ for(var i=0; i<studio_FOX.length; i++){
+
+             Year.push(score_FOX[i]['Year']);
+             
+             BV_score.push(Math.round(score_BV[i]['RottenTomato']));
+             FOX_score2.push(Math.round(score_FOX[i]['RottenTomato']));
+             FOX_score.push(score_FOX[i]['RottenTomato']);
+             Par_score.push(score_Par[i]['RottenTomato']);
+             Par_score2.push(Math.round(score_Par[i]['RottenTomato']));
+             Uni_score.push(score_Uni[i]['RottenTomato']);
+             Uni_score2.push(Math.round(score_Uni[i]['RottenTomato']));
+             Sony_score.push(score_Sony[i]['RottenTomato']);
+             Sony_score2.push(Math.round(score_Sony[i]['RottenTomato']));
+             WB_score.push(score_WB[i]['RottenTomato']);
+             WB_score2.push(Math.round(score_WB[i]['RottenTomato']));
+             //studio_Total.push(studio_BV[i]['box_office']+studio_FOX[i]['box_office']
+                               //+studio_Uni[i]['box_office']+studio_Par[i]['box_office']
+                               //+studio_WB[i]['box_office']+studio_Sony[i]['box_office'])
+    }
+     
+ 
+
+//////////////////////////////////////////////////
+                var traceBV = {
+                x: Year,
+                y: BV_score,
+                text: BV_score,
+                marker:{color:'pink'},
+                mode: 'markers+lines',
+                hoverinfo: 'text',
+                name:'BV',
+                fill: 'tozeroy'
+                 };
+
+                var traceUni = {
+                x: Year,
+                y: Uni_score,
+                text: Uni_score2,
+                marker:{color:'blue',opacity:0.40},
+                mode: 'markers+lines',
+                hoverinfo: 'text',
+                name:'Universal',
+                fill: 'tonexty'
+                 };
+
+                var traceFOX = {
+                x: Year,
+                y: FOX_score,
+                text: FOX_score2,
+                mode: 'markers+lines',
+                hoverinfo: 'text',
+                marker:{color:'orange',opacity:0.70},
+                name:'Fox',
+                fill: 'tonexty'
+                 };
+                var tracePar = {
+                x: Year,
+                y: Par_score,
+                text: Par_score2,
+                mode: 'markers+lines',
+                hoverinfo: 'text',
+                marker:{color:'purple',opacity:0.60},
+                name:'Paramount',
+                fill: 'tonexty'
+                };
+                var traceSony = {
+                x: Year,
+                y: Sony_score,
+                text: Sony_score2,
+                mode: 'markers+lines',
+                hoverinfo: 'text',
+                marker:{color:'green',opacity:0.50},
+                name:'Sony',
+                fill: 'tonexty'
+                 };     
+                var traceWB = {
+                x: Year,
+                y: WB_score,
+                text: WB_score2,
+                mode: 'markers+lines',
+                hoverinfo: 'text',
+                marker:{color:'red',opacity:0.50},
+                name:'WB',
+                fill: 'tonexty'
+                 };   
+
+
+
+                var data=[traceBV,traceFOX,traceUni,traceWB,traceSony,tracePar];
+
+                var layout = {
+                  title: 'Average Rotten Tomato Scores for 6 Studios',
+                  showlegend: true,
+                  xaxis: {title: 'Year',autotick: false,showticklabels: true,tickangle: 45},
+                  yaxis: {//range:[0,500000],
+                  title: 'Score'},
+                  barmode: 'stack'
+                  //yaxis2: {range:[0,2500],overlaying: 'y',side: 'right'},
+                  //yaxis3: {range:[0,150],titlefont: {color: 'gold'},
+                  //tickfont: {color: 'gold'},anchor: 'free',
+                  //overlaying: 'y',side: 'left',position: 0.1}
+                  
+                }; 
+                
+                function stackedArea(traces) {
+                  for(var i=1; i<traces.length; i++) {
+                    for(var j=0; j<(Math.min(traces[i]['y'].length, traces[i-1]['y'].length)); j++) {
+                      traces[i]['y'][j] += traces[i-1]['y'][j];
+                    }
+                  }
+                  return traces;
+                }
+ 
+
+               //Plotly.newPlot('myDiv2', data, layout);
+               Plotly.newPlot('myDiv2', stackedArea(data),layout)
+
+///////////////////////////////////////////////////////////////////////////////////
+}
+
+
+
+
+function draw_oscar(){
+
+  var Year=[];
+  var BV_a=[];
+  var FOX_a=[];
+  var Uni_a=[];
+  var WB_a=[];
+  var Par_a=[];
+  var Sony_a=[];
+  var studio_a=[];
+
+
+ for(var i=0; i<studio_FOX.length; i++){
+
+             Year.push(oscar_FOX[i]['Year']);
+             
+             BV_a.push(oscar_BV[i]['Oscar_winner']);
+             FOX_a.push(oscar_FOX[i]['Oscar_winner']);
+             Par_a.push(oscar_Par[i]['Oscar_winner']);
+             Uni_a.push(oscar_Uni[i]['Oscar_winner']);
+             Sony_a.push(oscar_Sony[i]['Oscar_winner']);
+             WB_a.push(oscar_WB[i]['Oscar_winner']);
+             studio_a.push(oscar_BV[i]['Oscar_winner']+oscar_FOX[i]['Oscar_winner']
+                               +oscar_Uni[i]['Oscar_winner']+oscar_Par[i]['Oscar_winner']
+                               +oscar_WB[i]['Oscar_winner']+oscar_Sony[i]['Oscar_winner'])
+    }
+     
+ 
+
+//////////////////////////////////////////////////
+                var traceBV = {
+                x: Year,
+                y: BV_a,
+                marker:{color:'pink'},
+                type:'bar',
+                hoverinfo: 'y',
+                name:'BV'
+                 };
+
+                var traceUni = {
+                x: Year,
+                y: Uni_a,
+                marker:{color:'blue',opacity:0.40},
+                type:'bar',
+                hoverinfo: 'y',
+                name:'Universal'
+                 };
+
+                var traceFOX = {
+                x: Year,
+                y: FOX_a,
+                type:'bar',
+                hoverinfo: 'y',
+                marker:{color:'orange',opacity:0.70},
+                name:'Fox'
+                 };
+                var tracePar = {
+                x: Year,
+                y: Par_a,
+                type:'bar',
+                hoverinfo: 'y',
+                marker:{color:'purple',opacity:0.60},
+                name:'Paramount'
+                };
+                var traceSony = {
+                x: Year,
+                y: Sony_a,
+                type:'bar',
+                hoverinfo: 'y',
+                marker:{color:'green',opacity:0.50},
+                name:'Sony'
+                 };     
+                var traceWB = {
+                x: Year,
+                y: WB_a,
+                type:'bar',
+                hoverinfo: 'y',
+                marker:{color:'red',opacity:0.50},
+                name:'WB'
+                 };   
+
+                var traceTotal= {
+                x: Year,
+                y: studio_a,
+                mode: 'lines+markers',
+                hoverinfo: 'y',
+                marker:{color:'red',opacity:0.50},
+                name:'Total Awards'
+                 };   
+
+
+                var data=[traceBV,traceFOX,traceUni,traceWB,traceSony,tracePar,traceTotal];
+
+                var layout = {
+                  title: 'Oscar Awards for 6 Studios',
+                  showlegend: true,
+                  xaxis: {title: 'Year',autotick: false,showticklabels: true,tickangle: 45},
+                  yaxis: {//range:[0,500000],
+                  title: 'Dollars ($)'},
+                  barmode: 'stack'
+                  //yaxis2: {range:[0,2500],overlaying: 'y',side: 'right'},
+                  //yaxis3: {range:[0,150],titlefont: {color: 'gold'},
+                  //tickfont: {color: 'gold'},anchor: 'free',
+                  //overlaying: 'y',side: 'left',position: 0.1}
+                  
+                }; 
+                
+ 
+
+               Plotly.newPlot('myDiv3', data, layout);
+
+///////////////////////////////////////////////////////////////////////////////////
+}
 
 </script>
 </html>
