@@ -1,0 +1,212 @@
+<html>
+<head>
+  <title>Project 2 Plotly</title>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="http://d3js.org/d3.v3.min.js"></script>
+   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<style>
+
+
+</style>
+
+<body>
+
+
+
+<div class="row">
+  <div class="firstcolumn">
+  
+ 
+  <div id="myDiv" class="column"></div>
+<!--  <div id="myDiv2" class="column2"></div> -->
+</div>
+
+</div>
+
+
+
+
+</body>
+
+
+
+
+<script>  
+
+
+//Sales Change
+var studio_FOX=[];
+var studio_BV=[];
+var studio_Uni=[];
+var studio_Par=[];
+var studio_WB=[];
+var studio_Sony=[];
+
+
+
+////Load Sales Data in 
+var loadFile1 = $.ajax({
+  url: '/sales',
+  async: true,
+  dataType: 'json',
+}).done(successFunction_sales);
+
+
+
+///Sales_data Filter
+function successFunction_sales(data) {
+  var allRows = data
+ 
+  for (var singleRow = 0; singleRow < allRows.length; singleRow++) {
+    if (data[singleRow]['Studio']=='Fox'){
+      studio_FOX.push(data[singleRow])
+    }
+    if (data[singleRow]['Studio']=='WB'){
+      studio_WB.push(data[singleRow])
+    }
+    if (data[singleRow]['Studio']=='BV'){
+      studio_BV.push(data[singleRow])
+    }
+    if (data[singleRow]['Studio']=='Paramount'){
+      studio_Par.push(data[singleRow])
+    }
+    if (data[singleRow]['Studio']=='Sony'){
+      studio_Sony.push(data[singleRow])
+    }
+    if (data[singleRow]['Studio']=='Universal'){
+      studio_Uni.push(data[singleRow])
+    }
+
+  }
+  //alert(studio_FOX[0])
+  draw();
+//Select data
+ 
+}
+
+
+
+
+function draw(){
+
+  var Year=[];
+  var BV_box=[];
+  var FOX_box=[];
+  var Uni_box=[];
+  var WB_box=[];
+  var Par_box=[];
+  var Sony_box=[];
+  var studio_Total=[];
+
+
+ for(var i=0; i<studio_FOX.length; i++){
+
+             Year.push(studio_FOX[i]['Year']);
+             
+             BV_box.push(studio_BV[i]['box_office']);
+             FOX_box.push(studio_FOX[i]['box_office']);
+             Par_box.push(studio_Par[i]['box_office']);
+             Uni_box.push(studio_Uni[i]['box_office']);
+             Sony_box.push(studio_Sony[i]['box_office']);
+             WB_box.push(studio_WB[i]['box_office']);
+             studio_Total.push(studio_BV[i]['box_office']+studio_FOX[i]['box_office']
+                               +studio_Uni[i]['box_office']+studio_Par[i]['box_office']
+                               +studio_WB[i]['box_office']+studio_Sony[i]['box_office'])
+    }
+     
+ 
+
+//////////////////////////////////////////////////
+                var traceBV = {
+                x: Year,
+                y: BV_box,
+                marker:{color:'pink'},
+                type:'bar',
+                hoverinfo: 'y',
+                name:'BV'
+                 };
+
+                var traceUni = {
+                x: Year,
+                y: Uni_box,
+                marker:{color:'blue',opacity:0.40},
+                type:'bar',
+                hoverinfo: 'y',
+                name:'Universal'
+                 };
+
+                var traceFOX = {
+                x: Year,
+                y: FOX_box,
+                type:'bar',
+                hoverinfo: 'y',
+                marker:{color:'orange',opacity:0.70},
+                name:'Fox'
+                 };
+                var tracePar = {
+                x: Year,
+                y: Par_box,
+                type:'bar',
+                hoverinfo: 'y',
+                marker:{color:'purple',opacity:0.60},
+                name:'Paramount'
+                };
+                var traceSony = {
+                x: Year,
+                y: Sony_box,
+                type:'bar',
+                hoverinfo: 'y',
+                marker:{color:'green',opacity:0.50},
+                name:'Sony'
+                 };     
+                var traceWB = {
+                x: Year,
+                y: WB_box,
+                type:'bar',
+                hoverinfo: 'y',
+                marker:{color:'red',opacity:0.50},
+                name:'WB'
+                 };   
+
+                var traceTotal= {
+                x: Year,
+                y: studio_Total,
+                mode: 'lines+markers',
+                hoverinfo: 'y',
+                marker:{color:'red',opacity:0.50},
+                name:'Total Box Office'
+                 };   
+
+
+                var data=[traceBV,traceFOX,traceUni,traceWB,traceSony,tracePar,traceTotal];
+
+                var layout = {
+                  title: 'Box Office for 6 Studios',
+                  showlegend: true,
+                  xaxis: {title: 'Year',autotick: false,showticklabels: true,tickangle: 45},
+                  yaxis: {//range:[0,500000],
+                  title: 'Dollars ($)'},
+                  barmode: 'stack'
+                  //yaxis2: {range:[0,2500],overlaying: 'y',side: 'right'},
+                  //yaxis3: {range:[0,150],titlefont: {color: 'gold'},
+                  //tickfont: {color: 'gold'},anchor: 'free',
+                  //overlaying: 'y',side: 'left',position: 0.1}
+                  
+                }; 
+                
+ 
+
+               Plotly.newPlot('myDiv', data, layout);
+
+///////////////////////////////////////////////////////////////////////////////////
+}
+
+
+</script>
+</html>
+
