@@ -31,6 +31,12 @@ def oscar():
     sales = pd.read_csv('Oscar_chart.csv')
     return jsonify(sales.to_dict(orient="records"))
 
+@app.route('/animation')
+def animation():
+
+    animation = pd.read_csv('final_animation_data.csv')
+    return jsonify(animation.to_dict(orient="records"))
+
 
 if __name__ == "__main__":
     app.run(debug=True)
