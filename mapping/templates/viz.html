@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Avengers Global Sales</title>
+
+  <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+
+  <!-- D3 -->
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+  <!-- Our CSS -->
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+   <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+</head>
+
+<body>
+  <!-- The div where we will inject our map -->
+  <div id="map"></div>
+
+  <!-- Our JS -->
+    <script src="{{url_for('static', filename='js/app.js')}}"></script>
+
+</body>
+
+  <!-- <script type="text/javascript" src="template/logic.js"></script>-->
+</html>
