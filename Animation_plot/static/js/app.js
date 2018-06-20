@@ -99,11 +99,14 @@ Plotly.d3.json(url, function (err, data) {
 
       let layout = {
         xaxis: {
-          title: 'Year Change'
+          title: 'Box Office',
+          range: [0, 3000000000]
         },
         yaxis: {
-          title: 'Market Share per Studio'
+          title: 'Market Share per Studio',
+          range: [0, 0.4]
         },
+
         hovermode: 'closest',
          // We'll use updatemenus (whose functionality includes menus as
          // well as buttons) to create a play button and a pause button.
