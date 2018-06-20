@@ -1,0 +1,246 @@
+{"name":"North America","coordinates":"[54.526, -105.2551]","first_sales":"623357910","second_sales":459005868.0,"third_sales":660323950.0}
+{"name":"Andorra","coordinates":"[42.546245, 1.601554]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"United Arab Emirates","coordinates":"[23.424076, 53.847818]","first_sales":"6689950","second_sales":3166819.0,"third_sales":9872958.0}
+{"name":"Afghanistan","coordinates":"[33.93911, 67.709953]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Antigua and Barbuda","coordinates":"[17.060816, -61.796428]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Anguilla","coordinates":"[18.220554, -63.068615]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Albania","coordinates":"[41.153332, 20.168331]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Armenia","coordinates":"[40.069099, 45.038189]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Netherlands Antilles","coordinates":"[12.226079, -69.060087]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Angola","coordinates":"[-11.202692, 17.873887]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Antarctica","coordinates":"[-75.250973, -0.071389]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Argentina","coordinates":"[-38.416097, -63.616672]","first_sales":"17331732","second_sales":9280502.0,"third_sales":16288553.0}
+{"name":"American Samoa","coordinates":"[-14.270972, -170.132217]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Austria","coordinates":"[47.516231, 14.550072]","first_sales":"3175739","second_sales":4086924.0,"third_sales":5561304.0}
+{"name":"Australia","coordinates":"[-25.274398, 133.775136]","first_sales":"54385465","second_sales":30969152.0,"third_sales":46352246.0}
+{"name":"Aruba","coordinates":"[12.52111, -69.968338]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Azerbaijan","coordinates":"[40.143105, 47.576927]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Bosnia and Herzegovina","coordinates":"[43.915886, 17.679076]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Barbados","coordinates":"[13.193887, -59.543198]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Bangladesh","coordinates":"[23.684994, 90.356331]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Belgium","coordinates":"[50.503887, 4.469936]","first_sales":"4061231","second_sales":3313943.0,"third_sales":5479402.0}
+{"name":"Burkina Faso","coordinates":"[12.238333, -1.561593]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Bulgaria","coordinates":"[42.733883, 25.48583]","first_sales":"743965","second_sales":645121.0,"third_sales":988042.0}
+{"name":"Bahrain","coordinates":"[25.930414, 50.637772]","first_sales":null,"second_sales":562690.0,"third_sales":null}
+{"name":"Burundi","coordinates":"[-3.373056, 29.918886]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Benin","coordinates":"[9.30769, 2.315834]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Bermuda","coordinates":"[32.321384, -64.75737]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Brunei","coordinates":"[4.535277, 114.727669]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Bolivia","coordinates":"[-16.290154, -63.588653]","first_sales":"1885220","second_sales":2278266.0,"third_sales":2948957.0}
+{"name":"Brazil","coordinates":"[-14.235004, -51.92528]","first_sales":"63904807","second_sales":47862465.0,"third_sales":65822418.0}
+{"name":"Bahamas","coordinates":"[25.03428, -77.39628]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Bhutan","coordinates":"[27.514162, 90.433601]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Bouvet Island","coordinates":"[-54.423199, 3.413194]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Botswana","coordinates":"[-22.328474, 24.684866]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Belarus","coordinates":"[53.709807, 27.953389]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Belize","coordinates":"[17.189877, -88.49765]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Canada","coordinates":"[56.130366, -106.346771]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Cocos [Keeling] Islands","coordinates":"[-12.164165, 96.870956]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Congo [DRC]","coordinates":"[-4.038333, 21.758664]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Central African Republic","coordinates":"[6.611111, 20.939444]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Congo [Republic]","coordinates":"[-0.228021, 15.827659]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Switzerland","coordinates":"[46.818188, 8.227512]","first_sales":null,"second_sales":null,"third_sales":5463544.0}
+{"name":"C?te d'Ivoire","coordinates":"[7.539989, -5.54708]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Cook Islands","coordinates":"[-21.236736, -159.777671]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Chile","coordinates":"[-35.675147, -71.542969]","first_sales":"9247146","second_sales":6942365.0,"third_sales":14370631.0}
+{"name":"Cameroon","coordinates":"[7.369722, 12.354722]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"China","coordinates":"[35.86166, 104.195397]","first_sales":"86300000","second_sales":240110000.0,"third_sales":366249504.0}
+{"name":"Colombia","coordinates":"[4.570868, -74.297333]","first_sales":"7140604","second_sales":9955023.0,"third_sales":14523051.0}
+{"name":"Costa Rica","coordinates":"[9.748917, -83.753428]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Cuba","coordinates":"[21.521757, -77.781167]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Cape Verde","coordinates":"[16.002082, -24.013197]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Christmas Island","coordinates":"[-10.447525, 105.690449]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Cyprus","coordinates":"[35.126413, 33.429859]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Czech Republic","coordinates":"[49.817492, 15.472962]","first_sales":"1740748","second_sales":2011520.0,"third_sales":4305197.0}
+{"name":"Germany","coordinates":"[51.165691, 10.451526]","first_sales":"30828359","second_sales":31193932.0,"third_sales":43399760.0}
+{"name":"Djibouti","coordinates":"[11.825138, 42.590275]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Denmark","coordinates":"[56.26392, 9.501785]","first_sales":"5081339","second_sales":4578163.0,"third_sales":6655238.0}
+{"name":"Dominica","coordinates":"[15.414999, -61.370976]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Dominican Republic","coordinates":"[18.735693, -70.162651]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Algeria","coordinates":"[28.033886, 1.659626]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Ecuador","coordinates":"[-1.831239, -78.183406]","first_sales":"5410298","second_sales":5590716.0,"third_sales":null}
+{"name":"Estonia","coordinates":"[58.595272, 25.013607]","first_sales":null,"second_sales":261445.0,"third_sales":null}
+{"name":"Egypt","coordinates":"[26.820553, 30.802498]","first_sales":"913497","second_sales":1218558.0,"third_sales":null}
+{"name":"Western Sahara","coordinates":"[24.215527, -12.885834]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Eritrea","coordinates":"[15.179384, 39.782334]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Spain","coordinates":"[40.463667, -3.74922]","first_sales":"20220212","second_sales":13640131.0,"third_sales":24490980.0}
+{"name":"Ethiopia","coordinates":"[9.145, 40.489673]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Finland","coordinates":"[61.92411, 25.748151]","first_sales":"1476038","second_sales":1338700.0,"third_sales":3188207.0}
+{"name":"Fiji","coordinates":"[-16.578193, 179.414413]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Falkland Islands [Islas Malvinas]","coordinates":"[-51.796253, -59.523613]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Micronesia","coordinates":"[7.425554, 150.550812]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Faroe Islands","coordinates":"[61.892635, -6.911806]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"France","coordinates":"[46.227638, 2.213749]","first_sales":"37765919","second_sales":34270887.0,"third_sales":45270964.0}
+{"name":"Gabon","coordinates":"[-0.803689, 11.609444]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"United Kingdom","coordinates":"[55.378051, -3.435973]","first_sales":"80563081","second_sales":76623201.0,"third_sales":94995922.0}
+{"name":"Grenada","coordinates":"[12.262776, -61.604171]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Georgia","coordinates":"[42.315407, 43.356892]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"French Guiana","coordinates":"[3.933889, -53.125782]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Guernsey","coordinates":"[49.465691, -2.585278]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Ghana","coordinates":"[7.946527, -1.023194]","first_sales":"20549","second_sales":null,"third_sales":null}
+{"name":"Gibraltar","coordinates":"[36.137741, -5.345374]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Greenland","coordinates":"[71.706936, -42.604303]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Gambia","coordinates":"[13.443182, -15.310139]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Guinea","coordinates":"[9.945587, -9.696645]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Guadeloupe","coordinates":"[16.995971, -62.067641]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Equatorial Guinea","coordinates":"[1.650801, 10.267895]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Greece","coordinates":"[39.074208, 21.824312]","first_sales":"2599996","second_sales":1776109.0,"third_sales":2837253.0}
+{"name":"South Georgia and the South Sandwich Islands","coordinates":"[-54.429579, -36.587909]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Guatemala","coordinates":"[15.783471, -90.230759]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Guam","coordinates":"[13.444304, 144.793731]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Guinea-Bissau","coordinates":"[11.803749, -15.180413]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Guyana","coordinates":"[4.860416, -58.93018]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Gaza Strip","coordinates":"[31.354676, 34.308825]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Hong Kong","coordinates":"[22.396428, 114.109497]","first_sales":"12468825","second_sales":17155906.0,"third_sales":20479492.0}
+{"name":"Heard Island and McDonald Islands","coordinates":"[-53.08181, 73.504158]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Honduras","coordinates":"[15.199999, -86.241905]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Croatia","coordinates":"[45.1, 15.2]","first_sales":"387357","second_sales":348389.0,"third_sales":771061.0}
+{"name":"Haiti","coordinates":"[18.971187, -72.285215]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Hungary","coordinates":"[47.162494, 19.503304]","first_sales":"1759397","second_sales":1980532.0,"third_sales":3227236.0}
+{"name":"Indonesia","coordinates":"[-0.789275, 113.921327]","first_sales":"11949911","second_sales":null,"third_sales":25288929.0}
+{"name":"Ireland","coordinates":"[53.41291, -8.24389]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Israel","coordinates":"[31.046051, 34.851612]","first_sales":"2449957","second_sales":2021296.0,"third_sales":null}
+{"name":"Isle of Man","coordinates":"[54.236107, -4.548056]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"India","coordinates":"[20.593684, 78.96288]","first_sales":"12616061","second_sales":16695001.0,"third_sales":43594456.0}
+{"name":"British Indian Ocean Territory","coordinates":"[-6.343194, 71.876519]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Iraq","coordinates":"[33.223191, 43.679291]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Iran","coordinates":"[32.427908, 53.688046]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Iceland","coordinates":"[64.963051, -19.020835]","first_sales":"502028","second_sales":371887.0,"third_sales":697010.0}
+{"name":"Italy","coordinates":"[41.87194, 12.56738]","first_sales":"22012517","second_sales":18120047.0,"third_sales":21966660.0}
+{"name":"Jersey","coordinates":"[49.214439, -2.13125]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Jamaica","coordinates":"[18.109581, -77.297508]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Jordan","coordinates":"[30.585164, 36.238414]","first_sales":null,"second_sales":361851.0,"third_sales":null}
+{"name":"Japan","coordinates":"[36.204824, 138.252924]","first_sales":"45256010","second_sales":26373434.0,"third_sales":33572499.0}
+{"name":"Kenya","coordinates":"[-0.023559, 37.906193]","first_sales":null,"second_sales":317574.0,"third_sales":null}
+{"name":"Kyrgyzstan","coordinates":"[41.20438, 74.766098]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Cambodia","coordinates":"[12.565679, 104.990963]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Kiribati","coordinates":"[-3.370417, -168.734039]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Comoros","coordinates":"[-11.875001, 43.872219]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Saint Kitts and Nevis","coordinates":"[17.357822, -62.782998]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"North Korea","coordinates":"[40.339852, 127.510093]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"South Korea","coordinates":"[35.907757, 127.766922]","first_sales":"50683851","second_sales":78286828.0,"third_sales":92856237.0}
+{"name":"Kuwait","coordinates":"[29.31166, 47.481766]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Cayman Islands","coordinates":"[19.513469, -80.566956]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Kazakhstan","coordinates":"[48.019573, 66.923684]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Laos","coordinates":"[19.85627, 102.495496]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Lebanon","coordinates":"[33.854721, 35.862285]","first_sales":"534555","second_sales":542714.0,"third_sales":null}
+{"name":"Saint Lucia","coordinates":"[13.909444, -60.978893]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Liechtenstein","coordinates":"[47.166, 9.555373]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Sri Lanka","coordinates":"[7.873054, 80.771797]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Liberia","coordinates":"[6.428055, -9.429499]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Lesotho","coordinates":"[-29.609988, 28.233608]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Lithuania","coordinates":"[55.169438, 23.881275]","first_sales":"n\/a","second_sales":176271.0,"third_sales":408237.0}
+{"name":"Luxembourg","coordinates":"[49.815273, 6.129583]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Latvia","coordinates":"[56.879635, 24.603189]","first_sales":null,"second_sales":195571.0,"third_sales":null}
+{"name":"Libya","coordinates":"[26.3351, 17.228331]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Morocco","coordinates":"[31.791702, -7.09262]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Monaco","coordinates":"[43.750298, 7.412841]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Moldova","coordinates":"[47.411631, 28.369885]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Montenegro","coordinates":"[42.708678, 19.37439]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Madagascar","coordinates":"[-18.766947, 46.869107]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Marshall Islands","coordinates":"[7.131474, 171.184478]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Macedonia [FYROM]","coordinates":"[41.608635, 21.745275]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Mali","coordinates":"[17.570692, -3.996166]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Myanmar [Burma]","coordinates":"[21.913965, 95.956223]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Mongolia","coordinates":"[46.862496, 103.846656]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Macau","coordinates":"[22.198745, 113.543873]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Northern Mariana Islands","coordinates":"[17.33083, 145.38469]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Martinique","coordinates":"[14.641528, -61.024174]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Mauritania","coordinates":"[21.00789, -10.940835]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Montserrat","coordinates":"[16.742498, -62.187366]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Malta","coordinates":"[35.937496, 14.375416]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Mauritius","coordinates":"[-20.348404, 57.552152]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Maldives","coordinates":"[3.202778, 73.22068]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Malawi","coordinates":"[-13.254308, 34.301525]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Mexico","coordinates":"[23.634501, -102.552784]","first_sales":"61748523","second_sales":50940433.0,"third_sales":59865090.0}
+{"name":"Malaysia","coordinates":"[4.210484, 101.975766]","first_sales":"10965615","second_sales":13390227.0,"third_sales":17301836.0}
+{"name":"Mozambique","coordinates":"[-18.665695, 35.529562]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Namibia","coordinates":"[-22.95764, 18.49041]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"New Caledonia","coordinates":"[-20.904305, 165.618042]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Niger","coordinates":"[17.607789, 8.081666]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Norfolk Island","coordinates":"[-29.040835, 167.954712]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Nigeria","coordinates":"[9.081999, 8.675277]","first_sales":"202368","second_sales":273301.0,"third_sales":null}
+{"name":"Nicaragua","coordinates":"[12.865416, -85.207229]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Netherlands","coordinates":"[52.132633, 5.291266]","first_sales":"6609804","second_sales":5465221.0,"third_sales":10793866.0}
+{"name":"Norway","coordinates":"[60.472024, 8.468946]","first_sales":"5636566","second_sales":4770579.0,"third_sales":5482595.0}
+{"name":"Nepal","coordinates":"[28.394857, 84.124008]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Nauru","coordinates":"[-0.522778, 166.931503]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Niue","coordinates":"[-19.054445, -169.867233]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"New Zealand","coordinates":"[-40.900557, 174.885971]","first_sales":"7140832","second_sales":4809004.0,"third_sales":7178704.0}
+{"name":"Oman","coordinates":"[21.512583, 55.923255]","first_sales":null,"second_sales":359221.0,"third_sales":null}
+{"name":"Panama","coordinates":"[8.537981, -80.782127]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Peru","coordinates":"[-9.189967, -75.015152]","first_sales":"8523744","second_sales":7025935.0,"third_sales":null}
+{"name":"French Polynesia","coordinates":"[-17.679742, -149.406843]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Papua New Guinea","coordinates":"[-6.314993, 143.95555]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Philippines","coordinates":"[12.879721, 121.774017]","first_sales":"14382992","second_sales":14097441.0,"third_sales":23292202.0}
+{"name":"Pakistan","coordinates":"[30.375321, 69.345116]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Poland","coordinates":"[51.919438, 19.145136]","first_sales":"3165105","second_sales":3967269.0,"third_sales":7183265.0}
+{"name":"Saint Pierre and Miquelon","coordinates":"[46.941936, -56.27111]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Pitcairn Islands","coordinates":"[-24.703615, -127.439308]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Puerto Rico","coordinates":"[18.220833, -66.590149]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Palestinian Territories","coordinates":"[31.952162, 35.233154]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Portugal","coordinates":"[39.399872, -8.224454]","first_sales":"2489524","second_sales":1841706.0,"third_sales":2822573.0}
+{"name":"Palau","coordinates":"[7.51498, 134.58252]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Paraguay","coordinates":"[-23.442503, -58.443832]","first_sales":null,"second_sales":null,"third_sales":1078729.0}
+{"name":"Qatar","coordinates":"[25.354826, 51.183884]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"R??union","coordinates":"[-21.115141, 55.536384]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Romania","coordinates":"[45.943161, 24.96676]","first_sales":"n\/a","second_sales":1137226.0,"third_sales":2457434.0}
+{"name":"Serbia","coordinates":"[44.016521, 21.005859]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Russia","coordinates":"[61.52401, 105.318756]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Rwanda","coordinates":"[-1.940278, 29.873888]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Saudi Arabia","coordinates":"[23.885942, 45.079162]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Solomon Islands","coordinates":"[-9.64571, 160.156194]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Seychelles","coordinates":"[-4.679574, 55.491977]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Sudan","coordinates":"[12.862807, 30.217636]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Sweden","coordinates":"[60.128161, 18.643501]","first_sales":"7595353","second_sales":5240559.0,"third_sales":7634007.0}
+{"name":"Singapore","coordinates":"[1.352083, 103.819836]","first_sales":"11172253","second_sales":9904467.0,"third_sales":12133512.0}
+{"name":"Saint Helena","coordinates":"[-24.143474, -10.030696]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Slovenia","coordinates":"[46.151241, 14.995463]","first_sales":"163737","second_sales":122335.0,"third_sales":328866.0}
+{"name":"Svalbard and Jan Mayen","coordinates":"[77.553604, 23.670272]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Slovakia","coordinates":"[48.669026, 19.699024]","first_sales":"448435","second_sales":588510.0,"third_sales":1333385.0}
+{"name":"Sierra Leone","coordinates":"[8.460555, -11.779889]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"San Marino","coordinates":"[43.94236, 12.457777]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Senegal","coordinates":"[14.497401, -14.452362]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Somalia","coordinates":"[5.152149, 46.199616]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Suriname","coordinates":"[3.919305, -56.027783]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"S?o Tom?? and Pr??ncipe","coordinates":"[0.18636, 6.613081]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"El Salvador","coordinates":"[13.794185, -88.89653]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Syria","coordinates":"[34.802075, 38.996815]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Swaziland","coordinates":"[-26.522503, 31.465866]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Turks and Caicos Islands","coordinates":"[21.694025, -71.797928]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Chad","coordinates":"[15.454166, 18.732207]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"French Southern Territories","coordinates":"[-49.280366, 69.348557]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Togo","coordinates":"[8.619543, 0.824782]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Thailand","coordinates":"[15.870032, 100.992541]","first_sales":"7935363","second_sales":8850822.0,"third_sales":17944798.0}
+{"name":"Tajikistan","coordinates":"[38.861034, 71.276093]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Tokelau","coordinates":"[-8.967363, -171.855881]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Timor-Leste","coordinates":"[-8.874217, 125.727539]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Turkmenistan","coordinates":"[38.969719, 59.556278]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Tunisia","coordinates":"[33.886917, 9.537499]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Tonga","coordinates":"[-21.178986, -175.198242]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Turkey","coordinates":"[38.963745, 35.243322]","first_sales":"4257979","second_sales":5864977.0,"third_sales":6046778.0}
+{"name":"Trinidad and Tobago","coordinates":"[10.691803, -61.222503]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Tuvalu","coordinates":"[-7.109535, 177.64933]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Taiwan","coordinates":"[23.69781, 120.960515]","first_sales":"20100000","second_sales":18417745.0,"third_sales":21497834.0}
+{"name":"Tanzania","coordinates":"[-6.369028, 34.888822]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Ukraine","coordinates":"[48.379433, 31.16558]","first_sales":"2210225","second_sales":1909793.0,"third_sales":3914908.0}
+{"name":"Uganda","coordinates":"[1.373333, 32.290275]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"U.S. Minor Outlying Islands","coordinates":null,"first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"United States","coordinates":"[37.09024, -95.712891]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Uruguay","coordinates":"[-32.522779, -55.765835]","first_sales":"517473","second_sales":458022.0,"third_sales":772075.0}
+{"name":"Uzbekistan","coordinates":"[41.377491, 64.585262]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Vatican City","coordinates":"[41.902916, 12.453389]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Saint Vincent and the Grenadines","coordinates":"[12.984305, -61.287228]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Venezuela","coordinates":"[6.42375, -66.58973]","first_sales":"13216039","second_sales":18531156.0,"third_sales":3652028.0}
+{"name":"British Virgin Islands","coordinates":"[18.420695, -64.639968]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"U.S. Virgin Islands","coordinates":"[18.335765, -64.896335]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Vietnam","coordinates":"[14.058324, 108.277199]","first_sales":null,"second_sales":5259089.0,"third_sales":null}
+{"name":"Vanuatu","coordinates":"[-15.376706, 166.959158]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Wallis and Futuna","coordinates":"[-13.768752, -177.156097]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Samoa","coordinates":"[-13.759029, -172.104629]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Kosovo","coordinates":"[42.602636, 20.902977]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Yemen","coordinates":"[15.552727, 48.516388]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Mayotte","coordinates":"[-12.8275, 45.166244]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"South Africa","coordinates":"[-30.559482, 22.937506]","first_sales":"4609462","second_sales":3276734.0,"third_sales":5378592.0}
+{"name":"Zambia","coordinates":"[-13.133897, 27.849332]","first_sales":null,"second_sales":null,"third_sales":null}
+{"name":"Zimbabwe","coordinates":"[-19.015438, 29.154857]","first_sales":null,"second_sales":null,"third_sales":null}
