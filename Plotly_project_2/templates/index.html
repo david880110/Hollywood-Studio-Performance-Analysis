@@ -20,8 +20,8 @@
 
 <div class="row">
   <div class="firstcolumn">
-
-
+  
+ 
   <div id="myDiv" class="column"></div>
 <!--  <div id="myDiv2" class="column2"></div> -->
 </div>
@@ -31,8 +31,8 @@
 
 <div class="row">
   <div class="firstcolumn">
-
-
+  
+ 
   <div id="myDiv2" class="column"></div>
 <!--  <div id="myDiv2" class="column2"></div> -->
 </div>
@@ -41,8 +41,8 @@
 
 <div class="row">
   <div class="firstcolumn">
-
-
+  
+ 
   <div id="myDiv3" class="column"></div>
 <!--  <div id="myDiv2" class="column2"></div> -->
 </div>
@@ -54,8 +54,8 @@
 
 <div class="row">
   <div class="firstcolumn">
-
-
+  
+ 
   <div id="myDiv4" class="column"></div>
 <!--  <div id="myDiv2" class="column2"></div> -->
 </div>
@@ -69,7 +69,7 @@
 
 
 
-<script>
+<script>  
 
 
 var studio_FOX=[];
@@ -95,7 +95,7 @@ var oscar_WB=[];
 var oscar_Sony=[];
 
 
-////Load Data in
+////Load Data in 
 var loadFile1 = $.ajax({
   url: '/sales',
   async: true,
@@ -127,7 +127,7 @@ var loadFile_animation = $.ajax({
 ///Sales_data Filter
 function successFunction_sales(data) {
   var allRows = data
-
+ 
   for (var singleRow = 0; singleRow < allRows.length; singleRow++) {
     if (data[singleRow]['Studio']=='Fox'){
       studio_FOX.push(data[singleRow])
@@ -152,12 +152,12 @@ function successFunction_sales(data) {
   //alert(studio_FOX[0])
   draw();
 //Select data
-
+ 
 }
 
 function successFunction_score(data) {
   var allRows = data
-
+ 
   for (var singleRow = 0; singleRow < allRows.length; singleRow++) {
     if (data[singleRow]['Studio']=='Fox'){
       score_FOX.push(data[singleRow])
@@ -182,13 +182,13 @@ function successFunction_score(data) {
   //alert(studio_FOX[0])
   draw_score();
 //Select data
-
+ 
 }
 
 
 function successFunction_oscar(data) {
   var allRows = data
-
+ 
   for (var singleRow = 0; singleRow < allRows.length; singleRow++) {
     if (data[singleRow]['Studio']=='Fox'){
       oscar_FOX.push(data[singleRow])
@@ -213,12 +213,12 @@ function successFunction_oscar(data) {
   //alert(studio_FOX[0])
   draw_oscar();
 //Select data
-
+ 
 }
 
 function successFunction_animation(data) {
   var allRows = data
-
+ 
 
 
   var lookup = {};
@@ -376,7 +376,7 @@ function successFunction_animation(data) {
     }]
   };
   // Create the plot:
-  d3('myDiv4', {
+  Plotly.newPlot('myDiv4', {
     data: traces,
     layout: layout,
     frames: frames,
@@ -385,7 +385,7 @@ function successFunction_animation(data) {
   //alert(studio_FOX[0])
   //draw();
 //Select data
-
+ 
 }
 
 function draw(){
@@ -403,7 +403,7 @@ function draw(){
  for(var i=0; i<studio_FOX.length; i++){
 
              Year.push(studio_FOX[i]['Year']);
-
+             
              BV_box.push(studio_BV[i]['box_office']);
              FOX_box.push(studio_FOX[i]['box_office']);
              Par_box.push(studio_Par[i]['box_office']);
@@ -414,8 +414,8 @@ function draw(){
                                +studio_Uni[i]['box_office']+studio_Par[i]['box_office']
                                +studio_WB[i]['box_office']+studio_Sony[i]['box_office'])
     }
-
-
+     
+ 
 
 //////////////////////////////////////////////////
                 var traceBV = {
@@ -459,7 +459,7 @@ function draw(){
                 hoverinfo: 'y',
                 marker:{color:'green',opacity:0.50},
                 name:'Sony'
-                 };
+                 };     
                 var traceWB = {
                 x: Year,
                 y: WB_box,
@@ -467,7 +467,7 @@ function draw(){
                 hoverinfo: 'y',
                 marker:{color:'red',opacity:0.50},
                 name:'WB'
-                 };
+                 };   
 
                 var traceTotal= {
                 x: Year,
@@ -476,7 +476,7 @@ function draw(){
                 hoverinfo: 'y',
                 marker:{color:'red',opacity:0.50},
                 name:'Total Box Office'
-                 };
+                 };   
 
 
                 var data=[traceBV,traceFOX,traceUni,traceWB,traceSony,tracePar,traceTotal];
@@ -492,10 +492,10 @@ function draw(){
                   //yaxis3: {range:[0,150],titlefont: {color: 'gold'},
                   //tickfont: {color: 'gold'},anchor: 'free',
                   //overlaying: 'y',side: 'left',position: 0.1}
-
-                };
-
-
+                  
+                }; 
+                
+ 
 
                Plotly.newPlot('myDiv', data, layout);
 
@@ -525,7 +525,7 @@ function draw_score(){
  for(var i=0; i<studio_FOX.length; i++){
 
              Year.push(score_FOX[i]['Year']);
-
+             
              BV_score.push(Math.round(score_BV[i]['RottenTomato']));
              FOX_score2.push(Math.round(score_FOX[i]['RottenTomato']));
              FOX_score.push(score_FOX[i]['RottenTomato']);
@@ -541,8 +541,8 @@ function draw_score(){
                                //+studio_Uni[i]['box_office']+studio_Par[i]['box_office']
                                //+studio_WB[i]['box_office']+studio_Sony[i]['box_office'])
     }
-
-
+     
+ 
 
 //////////////////////////////////////////////////
                 var traceBV = {
@@ -596,7 +596,7 @@ function draw_score(){
                 marker:{color:'green',opacity:0.50},
                 name:'Sony',
                 fill: 'tonexty'
-                 };
+                 };     
                 var traceWB = {
                 x: Year,
                 y: WB_score,
@@ -606,7 +606,7 @@ function draw_score(){
                 marker:{color:'red',opacity:0.50},
                 name:'WB',
                 fill: 'tonexty'
-                 };
+                 };   
 
 
 
@@ -623,9 +623,9 @@ function draw_score(){
                   //yaxis3: {range:[0,150],titlefont: {color: 'gold'},
                   //tickfont: {color: 'gold'},anchor: 'free',
                   //overlaying: 'y',side: 'left',position: 0.1}
-
-                };
-
+                  
+                }; 
+                
                 function stackedArea(traces) {
                   for(var i=1; i<traces.length; i++) {
                     for(var j=0; j<(Math.min(traces[i]['y'].length, traces[i-1]['y'].length)); j++) {
@@ -634,7 +634,7 @@ function draw_score(){
                   }
                   return traces;
                 }
-
+ 
 
                //Plotly.newPlot('myDiv2', data, layout);
                Plotly.newPlot('myDiv2', stackedArea(data),layout)
@@ -660,7 +660,7 @@ function draw_oscar(){
  for(var i=0; i<studio_FOX.length; i++){
 
              Year.push(oscar_FOX[i]['Year']);
-
+             
              BV_a.push(oscar_BV[i]['Oscar_winner']);
              FOX_a.push(oscar_FOX[i]['Oscar_winner']);
              Par_a.push(oscar_Par[i]['Oscar_winner']);
@@ -671,8 +671,8 @@ function draw_oscar(){
                                +oscar_Uni[i]['Oscar_winner']+oscar_Par[i]['Oscar_winner']
                                +oscar_WB[i]['Oscar_winner']+oscar_Sony[i]['Oscar_winner'])
     }
-
-
+     
+ 
 
 //////////////////////////////////////////////////
                 var traceBV = {
@@ -716,7 +716,7 @@ function draw_oscar(){
                 hoverinfo: 'y',
                 marker:{color:'green',opacity:0.50},
                 name:'Sony'
-                 };
+                 };     
                 var traceWB = {
                 x: Year,
                 y: WB_a,
@@ -724,7 +724,7 @@ function draw_oscar(){
                 hoverinfo: 'y',
                 marker:{color:'red',opacity:0.50},
                 name:'WB'
-                 };
+                 };   
 
                 var traceTotal= {
                 x: Year,
@@ -733,7 +733,7 @@ function draw_oscar(){
                 hoverinfo: 'y',
                 marker:{color:'red',opacity:0.50},
                 name:'Total Awards'
-                 };
+                 };   
 
 
                 var data=[traceBV,traceFOX,traceUni,traceWB,traceSony,tracePar,traceTotal];
@@ -749,10 +749,10 @@ function draw_oscar(){
                   //yaxis3: {range:[0,150],titlefont: {color: 'gold'},
                   //tickfont: {color: 'gold'},anchor: 'free',
                   //overlaying: 'y',side: 'left',position: 0.1}
-
-                };
-
-
+                  
+                }; 
+                
+ 
 
                Plotly.newPlot('myDiv3', data, layout);
 
