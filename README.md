@@ -8,7 +8,7 @@
 * Find how many oscar winning directors they worked with 
 * Find out the highest performing movie of the highest performing studio and its performance internationally
 
-## Members:
+## Members (in Alphabetical Order):
 * [David Gu](https://www.linkedin.com/in/thatmandavid-gu-a0806b5a/)
 * [Lindsay Yan](https://www.linkedin.com/in/lindsay-yan-8a09469b/)
 * [Sean Yu](https://www.linkedin.com/in/sean-yu-733205a6/)
