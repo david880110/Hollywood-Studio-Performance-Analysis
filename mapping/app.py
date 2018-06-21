@@ -33,18 +33,18 @@ def welcome():
         f"/api/v1.0/summary_data<br/>"
     )
 
-@app.route("/viz")
+@app.route("/mapping")
 def visualization():
-	return render_template("viz.html")
+	return render_template("mapping.html")
 
 query = """
 SELECT name as Country,
-latitude, 
+latitude,
 longitude,
 b.Total_Gross as first_sales,
 c.Total_Gross as second_sales,
 d.Total_Gross as third_sales
-FROM country a 
+FROM country a
 left join avenger2012_data b
 on a.name = b.Country
 left join avenger2015_data c
@@ -55,7 +55,7 @@ where b.Total_Gross is not null
 and c.Total_Gross is not null
 and d.Total_Gross  is not null
 """
-	
+
 @app.route("/api/v1.0/summary_data")
 def summary_data():
     """Return the data"""

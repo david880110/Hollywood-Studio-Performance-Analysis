@@ -21,14 +21,11 @@
   <!-- D3 -->
   <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
-  <!-- Our CSS -->
-   <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-
 </head>
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
@@ -85,6 +82,9 @@
   <!-- Scroll To Top Button -->
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+
+    <!-- Our CSS -->
+   <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
 </body>
 
   <!-- <script type="text/javascript" src="template/logic.js"></script>-->
