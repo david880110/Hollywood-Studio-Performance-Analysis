@@ -62,7 +62,7 @@ With the movie titles from Box Office Mojo, we leveraged OMDb API to pull some o
 
 After the data is pulled, we integrated all data into sqlite for plots and visualizations (We leveraged Ploty, D3 and Leaflet  to realize our plots and visualizations) 
 
-Once the plots are ready, we embedded them into our homepage (designed using ( HTML, Bootstrap,css, nextparticle javascript library, Google Fonts)
+Once the plots are ready, we embedded them into our homepage (designed using HTML, Bootstrap,css, nextparticle javascript library, Google Fonts)
 
 
 # Technology Used
@@ -77,10 +77,11 @@ Once the plots are ready, we embedded them into our homepage (designed using ( H
 
 
 
+
 ## Limitations 
 The biggest challenge is the time constraint, if given more time, we will be able to do a much better job.
 
-The second limitation is the amount of data we have, if we could have access to their Investment into the movies, we can perform some other interesting analysis 
+The second limitation is the amount of data we have, if we could have access to their investment into the movies, we can perform some other interesting analysis 
 
 
 
