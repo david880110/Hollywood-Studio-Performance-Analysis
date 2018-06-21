@@ -27,7 +27,7 @@ var darkmap = L.tileLayer(
 		row["first_sales"] = +row["first_sales"]
 		row["second_sales"] = +row["second_sales"]
 		row["third_sales"] = +row["third_sales"]
-		
+
 		//Put latitude and longitude into coordinates
 		row["coordinates"] = [row["latitude"], row["longitude"]]
 	})
@@ -48,7 +48,7 @@ var countryMarkers_2018 = [];
 // Loop through data and create country markers
 for (var i = 0; i < data.length; i++) {
   // Setting the marker radius for the country by passing total_gross into the markerSize function
-  
+
   countryMarkers_2012.push(
     L.circle(data[i].coordinates, {
       stroke: false,
@@ -57,16 +57,16 @@ for (var i = 0; i < data.length; i++) {
       fillColor: "red",
       radius: markerSize(data[i].first_sales)
     })
-	
-	.bindPopup("<h1>" + data[i].Country 
+
+	.bindPopup("<h1>" + data[i].Country
 	+ "</h1> <hr> <li>2012 Sales: "
-	+ "$" + data[i].first_sales.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + "</li>" 
+	+ "$" + data[i].first_sales.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + "</li>"
 	+ "<li>2015 Sales: "
 	+ "$" + data[i].second_sales.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + "</li>"
 	+ "<li>2018 Sales: "
 	+ "$" + data[i].third_sales.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + "</li>"
 	)//.addTo(myMap)
-	
+
 )};
 
 // Loop through data and create country markers
@@ -79,9 +79,9 @@ for (var i = 0; i < data.length; i++) {
       color: "black",
       fillColor: "yellow",
       radius: markerSize(data[i].second_sales)
-    }).bindPopup("<h1>" + data[i].Country 
+    }).bindPopup("<h1>" + data[i].Country
 	+ "</h1> <hr> <li>2012 Sales: "
-	+ "$" + data[i].first_sales.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + "</li>" 
+	+ "$" + data[i].first_sales.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + "</li>"
 	+ "<li>2015 Sales: "
 	+ "$" + data[i].second_sales.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + "</li>"
 	+ "<li>2018 Sales: "
@@ -99,9 +99,9 @@ for (var i = 0; i < data.length; i++) {
       color: "black",
       fillColor: "blue",
       radius: markerSize(data[i].third_sales)
-    }).bindPopup("<h1>" + data[i].Country 
+    }).bindPopup("<h1>" + data[i].Country
 	+ "</h1> <hr> <li>2012 Sales: "
-	+ "$" + data[i].first_sales.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + "</li>" 
+	+ "$" + data[i].first_sales.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + "</li>"
 	+ "<li>2015 Sales: "
 	+ "$" + data[i].second_sales.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + "</li>"
 	+ "<li>2018 Sales: "
@@ -136,3 +136,21 @@ L.control.layers(baseMaps, overlayMaps, {
   collapsed: false
 }).addTo(myMap);
 });
+
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

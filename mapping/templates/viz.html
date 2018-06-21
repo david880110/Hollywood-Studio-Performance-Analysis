@@ -22,13 +22,12 @@
   <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
   <!-- Our CSS -->
-  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 
 </head>
 
 <body>
-
+  <!-- navbar -->
   <nav class="navbar navbar-inverse">
   <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -56,11 +55,35 @@
 </nav>
   </nav>
 
+<div class='container'>
+        <div class='jumbotron' style='margin-top:25px'>
+            <h1><center>Avengers Global Sales</center></h1>
+            <dl>
+                    <strong> Data Sources:</strong>
+                    <dt><a href="http://www.boxofficemojo.com/">Box Office Mojo</a></dt>
+                    <dd>Founded in 1999, Box Office Mojo tracks box office revenue in a systematic, algorithmic way, and publishes the data on its website. In 2008 IMDb, owned by Amazon, purchased Box Office Mojo. The website is widely used within the film industry as a source of data. From 2002–11, Box Office Mojo maintained popular forums on its website.</dd>
+
+                    <dt>The Avengers film series</dt>
+                    <dd>The Marvel Cinematic Universe (MCU) films are an American series of superhero films, based on characters that appear in publications by Marvel Comics. The films have been in production since 2007, and in that time Marvel Studios has produced 19 films, with 13 more in various stages of production. The series collectively has grossed over $16.8 billion at the global box office, making it the highest-grossing film franchise of all time.
+                    </dd>
+
+                    <dt>TITLE (ADD MORE HERE)</dt>ABCDEFG....
+                    <dd>
+                    </dd>
+                </dl>
+
+
+        </div>
+</div>
+
   <!-- The div where we will inject our map -->
   <div id="map"></div>
 
   <!-- Our JS -->
-    <script src="{{url_for('static', filename='js/app.js')}}"></script>
+  <script src="{{url_for('static', filename='js/app.js')}}"></script>
+
+  <!-- Scroll To Top Button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 </body>
 
