@@ -77,8 +77,16 @@
             </p>
                 <dl>
                     <strong> Data Sources:</strong>
-                    <dt><a href="http://www.boxofficemojo.com/">Box Office Mojo</a></dt>
-                    <dd>Founded in 1999, Box Office Mojo tracks box office revenue in a systematic, algorithmic way, and publishes the data on its website. In 2008 IMDb, owned by Amazon, purchased Box Office Mojo. The website is widely used within the film industry as a source of data. From 2002–11, Box Office Mojo maintained popular forums on its website.</dd>
+                    <br/>
+                    <dt><a href="http://www.boxofficemojo.com/">Box Office for six</a></dt>
+                    <dd>Founded in 1999, Box Office Mojo keeps tracking box office revenue in a systematic, algorithmic way, and publishes the data on its website. In 2008 IMDb, owned by Amazon, purchased Box Office Mojo. The website is widely used within the film industry as a source of data. From 2002–11, Box Office Mojo maintained popular forums on its website.</dd>
+                    <br/>
+                    <dt><a href="https://rottentomatoes.com">Rotten Tomatoes</a></dt>
+                    <dd>Rotten Tomatoes is an American review-aggregation website for film and television. The company was launched in August 1998 by three undergraduate students at the University of California, Berkeley, Senh Duong, Patrick Y. Lee and Stephen Wang. The name "Rotten Tomatoes" derives from the practice of audiences throwing rotten tomatoes when disapproving of a poor stage performance.</dd>
+                    <br/>
+
+
+
                 </dl>
 
         </div>
@@ -96,6 +104,27 @@
 </div>
 
 
+
+    <div class="container"; margin-top:50px">
+        <div class="jumbotron" style="background:#D1D6E7;">
+
+
+                    <strong>Box Office for Six Studios</strong>
+                    <dd>The box office overall showed an increase from 2.37 Billion to 8.36 Billion, it had grown nearly 4 times over 27 years. Disney(BV) had increased its marketshare from a small player among the big 6 studios to the biggest marketshare holder. In 2017, Disney(BV)'s revenue accounted for more than 28% of the total box office by the big 6 studios</dd>
+                    <br/>
+
+
+
+
+                </dl>
+
+        </div>
+    </div>
+
+
+
+
+
 <div class="row">
   <div class="firstcolumn">
 
@@ -106,16 +135,21 @@
 
 </div>
 
-<div class="row">
-  <div class="firstcolumn">
+  <div class="container"; margin-top:50px">
+        <div class="jumbotron" style="background:#D1D6E7;">
 
 
-  <div id="myDiv3" class="column"></div>
-<!--  <div id="myDiv2" class="column2"></div> -->
-</div>
+                    <strong>Rotten Tomatoes Scores</strong> 
+                    <dd>The Rotten Tomatoes Scores did not fluctuate too much, except in 1994 when every studio got relatively low Rotten Tomatoes scores. There was another dip around 2001, after that the scores were slowing going up. BV, Fox and Univesal had the highest overall Rotten tomato scores.</dd>
+                    <br/>
 
-</div>
 
+
+
+                </dl>
+
+        </div>
+    </div>
 
 
 
@@ -128,6 +162,28 @@
 </div>
 
 </div>
+
+  <div class="container"; margin-top:50px">
+        <div class="jumbotron" style="background:#D1D6E7;">
+
+
+                    <strong>Total Gross Vs Rotten Tomatoes Scores</strong> 
+                    <dd>We see that Action movies are always at the top of the chart through out the 27 years for box Offices. Genres like Crime, Adventure, Animation and Biography always gets the highest Rotten Tomatoes scores but with low box office. In recent 3 years, BV made a lot of high quality movies with good box office. Warner Brothers made a lot of high review Biography, Adventure and Crime movies.but their box offices are not impressive.Paramount and Fox are 2 studios that never produced any blockbuster movies, but some of their movies have good reviews.</dd>
+
+
+
+
+                </dl>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
 
 
 
@@ -176,11 +232,11 @@ var loadFile2 = $.ajax({
   dataType: 'json',
 }).done(successFunction_score);
 
-var loadFile_oscar = $.ajax({
-  url: '/api/v1.0/oscar',
-  async: true,
-  dataType: 'json',
-}).done(successFunction_oscar);
+// var loadFile_oscar = $.ajax({
+//   url: '/api/v1.0/oscar',
+//   async: true,
+//   dataType: 'json',
+// }).done(successFunction_oscar);
 
 var loadFile_animation = $.ajax({
   url: '/api/v1.0/animation',
@@ -384,6 +440,7 @@ function successFunction_animation(data) {
   }
 
   var layout = {
+    title:'Total Gross vs Rotto Tomatoes Scores by Genre and Studio',
     xaxis: {
       title: 'RottenTomato',
       range: [0, 100]
