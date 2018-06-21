@@ -26,20 +26,16 @@ def years():
     
     return jsonify(unique_list)
 
-@app.route('/oscars_overall')
+#when consolidating flask code DO NOT DELETE THIS ROUTE
+#generating the table breakdown depends on this
+@app.route('/oscars/overall')
 def oscars_overall():
 
     oscars_overall = pd.read_csv('oscars_overall.csv')
     return jsonify(oscars_overall.to_dict(orient="records"))
 
-    
-@app.route('/oscars/')
-def oscars():
-    oscars = pd.read_csv('oscars.csv')
-    oscars = oscars.to_dict(orient="records")
-
-    return jsonify(oscars)    
-    
+#when consolidating flask code DO NOT DELETE THIS ROUTE
+#generating the table breakdown depends on this
 @app.route('/oscars/<year>')
 def oscars_by_year(year):
     oscars = pd.read_csv('oscars.csv')
