@@ -47,7 +47,6 @@ function optionChanged(year) {
     }
 }   
 
-//Oscars pie charts selected by year
 //Hardcoded due to time constraints
 //not an ideal solution but manageable with this dataset
 function oscars_by_year(year) {
@@ -92,33 +91,57 @@ function oscars_by_year(year) {
             oscars_chart("2002",0,0,0,0,2,1)
             break;    
         case '2003':
-            oscars_chart("2000",0,0,1,0,5,0)
+            oscars_chart("2003",1,1,0,0,0,2)
             break;
         case '2004':
-            oscars_chart("2000",0,0,1,0,5,0)
+            oscars_chart("2004",0,1,0,1,1,1)
             break;
         case '2005':
-            oscars_chart("2000",0,0,1,0,5,0)
+            oscars_chart("2005",0,1,0,2,1,1)
             break;
         case '2006':
-            oscars_chart("2000",0,0,1,0,5,0)
+            oscars_chart("2006",1,1,1,0,1,2)
             break;    
         case '2007':
-            oscars_chart("2000",0,0,1,0,5,0)
+            oscars_chart("2007",1,1,1,0,1,2)
             break;
         case '2008':
-            oscars_chart("2000",0,0,1,0,5,0)
+            oscars_chart("2008",0,1,1,0,0,1)
             break;      
         case '2009':
-            oscars_chart("2000",0,0,1,0,5,0)
-            break;  
+            oscars_chart("2009",1,1,0,0,0,1)
+            break;
+        case '2010':
+            oscars_chart("2010",2,1,1,1,1,1)
+            break;
+        case '2011':
+            oscars_chart("2011",1,1,0,0,0,1)
+            break;
+        case '2012':
+            oscars_chart("2012",1,1,0,2,2,1)
+            break;
+        case '2013':
+            oscars_chart("2013",1,1,0,1,0,3)
+            break;
+        case '2014':
+            oscars_chart("2014",1,2,2,0,0,1)
+            break;
+        case '2015':
+            oscars_chart("2015",1,1,1,1,1,1)
+            break;
+        case '2016':
+            oscars_chart("2016",2,0,1,0,0,3)
+            break;
+        case '2017':
+            oscars_chart("2017",2,1,0,0,1,2)
+            break;    
         default:
             //console.log(year);
             oscars_chart("1990-2017",24,22,19,25,27,33);
     }
 }
 
-
+//function to generate the pie charts based off data input
 function oscars_chart (year, bv_value, fox_value, paramount_value, sony_value, universal_value, wb_value) {
     data = [
 			{
@@ -214,4 +237,5 @@ function oscars_chart (year, bv_value, fox_value, paramount_value, sony_value, u
 	}
 });
 }
+
 
