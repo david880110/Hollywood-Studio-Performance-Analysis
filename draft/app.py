@@ -25,6 +25,7 @@ app = Flask(__name__)
 # Flask Routes
 #################################################
 
+'''
 @app.route("/")
 def welcome():
     return (
@@ -37,28 +38,37 @@ def welcome():
         f"/api/v1.0/oscar<br/>"
         f"/api/v1.0/animation<br/>"
     )
+'''
+
+
+@app.route('/')
+def welcome():
+    return render_template('index.html')
+
 
 @app.route("/map")
 def visualization():
-	return render_template("map.html")
+    return render_template("map.html")
 
-    
-@app.route('/hello')
+
+@app.route('/lindsay')
 def hello():
-    return render_template('lindsay.html')  
-    
+    return render_template('lindsay.html')
+
+
 @app.route('/market_share')
 def market_share_visualization():
     return render_template('sean.html')
-    
+
+
 query = """
 SELECT name as Country,
-latitude, 
+latitude,
 longitude,
 b.Total_Gross as first_sales,
 c.Total_Gross as second_sales,
 d.Total_Gross as third_sales
-FROM country a 
+FROM country a
 left join avenger2012_data b
 on a.name = b.Country
 left join avenger2015_data c
@@ -69,68 +79,79 @@ where b.Total_Gross is not null
 and c.Total_Gross is not null
 and d.Total_Gross  is not null
 """
-	
+
+
 @app.route("/api/v1.0/map_data")
 def summary_data():
     """Return the data"""
-    df = pd.read_sql_query(query,engine)
+    df = pd.read_sql_query(query, engine)
     return df.to_json(orient="records")
 
+
 query_2 = """
-SELECT * 
+SELECT *
 FROM studio_market_share
-"""   
+"""
+
 
 @app.route('/api/v1.0/market_share')
 def market_share():
     """Return the data"""
-    df_2 = pd.read_sql_query(query_2,engine)
+    df_2 = pd.read_sql_query(query_2, engine)
     return jsonify(df_2.to_dict(orient="records"))
 
+
 query_3 = """
-SELECT * 
+SELECT *
 FROM box_office
-""" 
-    
+"""
+
+
 @app.route('/api/v1.0/sales')
 def sales():
     """Return the data"""
-    df_3 = pd.read_sql_query(query_3,engine)
+    df_3 = pd.read_sql_query(query_3, engine)
     return jsonify(df_3.to_dict(orient="records"))
-    
+
+
 query_4 = """
-SELECT * 
+SELECT *
 FROM rotten_tomato
-""" 
-    
+"""
+
+
 @app.route('/api/v1.0/score')
 def score():
     """Return the data"""
-    df_4 = pd.read_sql_query(query_4,engine)
+    df_4 = pd.read_sql_query(query_4, engine)
     return jsonify(df_4.to_dict(orient="records"))
-    
+
+
 query_5 = """
-SELECT * 
+SELECT *
 FROM oscar
-""" 
-    
+"""
+
+
 @app.route('/api/v1.0/oscar')
 def oscar():
     """Return the data"""
-    df_5 = pd.read_sql_query(query_5,engine)
+    df_5 = pd.read_sql_query(query_5, engine)
     return jsonify(df_5.to_dict(orient="records"))
-    
+
+
 query_6 = """
-SELECT * 
+SELECT *
 FROM final_animation_data
-""" 
-    
+"""
+
+
 @app.route('/api/v1.0/animation')
 def animation():
     """Return the data"""
-    df_6 = pd.read_sql_query(query_6,engine)
+    df_6 = pd.read_sql_query(query_6, engine)
     return jsonify(df_6.to_dict(orient="records"))
-    
+
 
 if __name__ == '__main__':
     app.run()
