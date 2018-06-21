@@ -6,6 +6,7 @@ import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
+import json
 
 from flask import Flask, jsonify, render_template
 
@@ -61,6 +62,11 @@ def market_share_visualization():
     return render_template('sean.html')
 
 
+@app.route('/sonia')
+def pie_visualization():
+    return render_template('sonia.html')
+
+
 query = """
 SELECT name as Country,
 latitude,
@@ -80,6 +86,8 @@ and c.Total_Gross is not null
 and d.Total_Gross  is not null
 """
 
+# Mapping
+
 
 @app.route("/api/v1.0/map_data")
 def summary_data():
@@ -92,6 +100,8 @@ query_2 = """
 SELECT *
 FROM studio_market_share
 """
+
+# Bubble Chart for 6 Studios
 
 
 @app.route('/api/v1.0/market_share')
@@ -153,5 +163,87 @@ def animation():
     return jsonify(df_6.to_dict(orient="records"))
 
 
+# Pie Chart
+
+@app.route('/api/v1.0/years')
+def years():
+    oscars = pd.read_csv('oscars.csv')
+    oscars = oscars.to_dict(orient="records")
+
+    year_list = []
+    unique_list = []
+
+    for oscar in oscars:
+        year_list.append(oscar["Year"])
+
+    for year in year_list:
+        if year not in unique_list:
+            unique_list.append(year)
+
+    return jsonify(unique_list)
+
+
+'''
+query_7 = """
+SELECT year
+FROM oscar
+"""
+
+
+@app.route('/api/v1.0/years')
+def years():
+    df_7 = pd.read_sql_query(query_7, engine)
+    return jsonify(df_7.to_dict(orient="records"))
+'''
+
+query_8 = """
+SELECT *
+FROM oscar_overall
+"""
+
+
+@app.route("/api/v1.0/oscar_overall")
+def oscar_overall():
+    """Return the data"""
+    df_8 = pd.read_sql_query(query_8, engine)
+    return jsonify(df_8.to_dict(orient="records"))
+
+
+query_9 = """
+SELECT *
+FROM oscar
+"""
+
+
+@app.route('/api/v1.0/oscars/<year>')
+def oscars_by_year(year):
+    oscars = pd.read_csv('oscars.csv')
+    oscars = oscars.to_dict(orient="records")
+
+    oscar_list = []
+
+    for oscar in oscars:
+        if(oscar["Year"] == int(year)):
+            oscar_list.append(oscar)
+
+    return jsonify(oscar_list)
+
+
+'''
+@app.route('/api/v1.0/oscars/<year>')
+def oscars_by_year(year):
+    df_9 = pd.read_sql_query(query_9, engine)
+    # return jsonify(df_9.to_dict(orient="records"))
+    # oscars = pd.read_csv('oscars.csv')
+    # oscars = oscars.to_dict(orient="records")
+
+    year_info_list = []
+
+    for yearinfo in df_9:
+        if(yearinfo["Year"] == int(year)):
+            year_info_list.append(yearinfo)
+    return jsonify(year_info_list)
+'''
+
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
