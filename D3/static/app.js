@@ -62,28 +62,56 @@ function oscars_by_year(year) {
             oscars_chart("1992", 1,2,0,4,1,1)
             break;
         case '1993':
+            oscars_chart("1993", 0,1,0,2,2,1)
             break;
         case '1994':
-            oscars_chart("1994", 1,0,2,1,0,2);
+            oscars_chart("1994", 2,1,1,0,0,0);
             break;
         case '1995': 
-            oscars_chart("1995", 1,0,2,1,0,2)
+            oscars_chart("1995", 2,0,1,1,2,0)
             break;
         case '1996':
-            oscars_chart("1996", 1,0,2,1,0,2)
+            oscars_chart("1996", 1,1,1,0,1,1)
             break;
         case '1997':
+            oscars_chart("1997", 0,1,1,4,0,1)
             break;
         case '1998':
-            oscars_chart("1998", 1,0,2,1,0,2);
+            oscars_chart("1998", 0,0,1,0,1,0);
             break;
         case '1999': 
-            oscars_chart("1999",1,0,2,1,0,2)
+            oscars_chart("1999",1,0,1,0,1,1)
             break;
         case '2000':
-            oscars_chart("2000",1,0,2,1,0,2)
+            oscars_chart("2000",0,0,1,0,5,0)
             break;
-        
+        case '2001':
+            oscars_chart("2001",0,1,0,1,2,2)
+            break;
+        case '2002':
+            oscars_chart("2002",0,0,0,0,2,1)
+            break;    
+        case '2003':
+            oscars_chart("2000",0,0,1,0,5,0)
+            break;
+        case '2004':
+            oscars_chart("2000",0,0,1,0,5,0)
+            break;
+        case '2005':
+            oscars_chart("2000",0,0,1,0,5,0)
+            break;
+        case '2006':
+            oscars_chart("2000",0,0,1,0,5,0)
+            break;    
+        case '2007':
+            oscars_chart("2000",0,0,1,0,5,0)
+            break;
+        case '2008':
+            oscars_chart("2000",0,0,1,0,5,0)
+            break;      
+        case '2009':
+            oscars_chart("2000",0,0,1,0,5,0)
+            break;  
         default:
             //console.log(year);
             oscars_chart("1990-2017",24,22,19,25,27,33);
