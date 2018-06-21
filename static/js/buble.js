@@ -1,4 +1,4 @@
-let url = "/market_share";
+let url = "/api/v1.0/market_share";
 
 Plotly.d3.json(url, function (err, data) {
     // Create a lookup table to sort and regroup the columns of data,
@@ -106,6 +106,9 @@ Plotly.d3.json(url, function (err, data) {
           title: 'Market Share per Studio',
           range: [0, 0.4]
         },
+
+        paper_bgcolor:'#D1D6E7',
+        plot_bgcolor:'#D1D6E7',
 
         hovermode: 'closest',
          // We'll use updatemenus (whose functionality includes menus as
