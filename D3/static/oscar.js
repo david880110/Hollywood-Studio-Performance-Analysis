@@ -1,8 +1,8 @@
 //these are all in a separate file to handle a chart appearing upon loading
 
 function init (year, bv_value, fox_value, paramount_value, sony_value, universal_value, wb_value) {
-    oscars_chart (year, bv_value, fox_value, paramount_value, sony_value, universal_value, wb_value);
-
+    oscars_chart (year, bv_value, fox_value, paramount_value, sony_value, universal_value, wb_value); 
+    
     generateOscarTable(year);
 }
 
@@ -106,20 +106,20 @@ function oscars_chart (year, bv_value, fox_value, paramount_value, sony_value, u
 //function to generate the table based off data input
 //pulls from the flask route
 function generateOscarTable(currentOption) {
-
+    
     //data route for current year
     if (currentOption == '1990-2017') {
         var oscars_url = '/oscars/overall';
     }
-
+    
     else {
          var oscars_url = '/oscars/' + currentOption;
     }
-
-
+    
+    
     Plotly.d3.json(oscars_url, function(error, response){
         if (error) return console.warn(error);
-
+        
         console.log(oscars_url);
 
         //Grab a reference to where the metadata table will be
@@ -134,9 +134,9 @@ function generateOscarTable(currentOption) {
 
             cell1.innerHTML = response[i]["Studio"];
             cell2.innerHTML = response[i]["Oscar_winners"];
-        }
-
-
+        } 
+            
+                
         // set up the table headers
         var row = oscarTable.insertRow(0);
 
