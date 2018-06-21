@@ -2,32 +2,45 @@
 <html lang="en">
 
 <head>
+    <body style="background-color:#f0f0f5;">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Animation</title>
     <!-- Plotly.js -->
       <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
+
+    <!-- leaflet CDN for CSS  -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+
+    <!-- CSS code -->
+    <link src="{{url_for('static',filename='css/style.css')}}">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Market Share</title>
 </head>
 
 <body>
-    <div class="container" style="text-align:center; margin-top:50px">
+    <div class="container"; margin-top:50px">
         <div class="jumbotron" style="background:#D1D6E7;">
-            <h1>Six Studios, Twenty Years</h1>
-            <p style="padding-top:10px;margin-bottom:0px">Use the animate chart below to explore the dataset.
+            <h1><center>Six Studios, Twenty Years</center></h1>
+            <p style="padding-top:10px;margin-bottom:0px"><center>Use the animate chart below to explore the dataset.</center>
             </p>
+                <dl>
+                    <strong> Data Sources:</strong>
+                    <dt><a href="http://www.boxofficemojo.com/">Box Office Mojo</a></dt>
+                    <dd>Founded in 1999, Box Office Mojo tracks box office revenue in a systematic, algorithmic way, and publishes the data on its website. In 2008 IMDb, owned by Amazon, purchased Box Office Mojo. The website is widely used within the film industry as a source of data. From 2002–11, Box Office Mojo maintained popular forums on its website.</dd>
+                </dl>
+
         </div>
     </div>
 
