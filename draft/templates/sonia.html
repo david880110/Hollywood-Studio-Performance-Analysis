@@ -1,0 +1,68 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- Jquery for animations -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Mobile friendly code -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oscar Counts</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{url_for('static',filename='js/d3pie.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/oscars.js')}}"></script>
+</head>
+
+<body onload="init('1990-2017',24,22,19,25,27,33)">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-6">
+        <h5>SELECT YEAR:</h5>
+        <select id="selectYear" onchange="optionChanged(this.value)"></select>
+        <div id="pieChart"></div>
+        <div id="overallPieChart"></div>
+    </div>
+    <div class="col-md-6">
+        <h5>Yearly Data</h5>
+        <table id="oscarTable">
+        </table>
+    </div>
+</div>
+</div>
+
+<script src="{{url_for('static',filename='js/pie.js')}}"></script>
+
+<!-- DROPDOWN IS NOT WORKING
+
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="/lindsay">Oscar Awards</a></li>
+    <li><a href="/map">Box Office</a></li>
+    <li><a href="/sonia">Oscar Counts</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="/">Home</a></li>
+  </ul>
+</div>
+
+-->
+
+</body>
+</html>
+
