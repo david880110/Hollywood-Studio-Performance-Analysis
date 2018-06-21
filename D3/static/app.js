@@ -1,9 +1,4 @@
-function pieChartData(){
-    var url = '/oscar';
-    
-}
-
-sampleData = [
+oscars_overall = [
 			{
 				"label": "BV",
 				"value": 24,
@@ -62,7 +57,7 @@ var pie = new d3pie("pieChart", {
 	},
 	"data": {
 		"sortOrder": "value-desc",
-		"content": sampleData
+		"content": oscars_overall
 	},
 	"labels": {
 		"outer": {

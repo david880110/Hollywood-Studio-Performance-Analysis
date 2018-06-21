@@ -11,12 +11,33 @@ cors = CORS(app, resources={r"/foo": {"origins": "http://localhost:port"}})
 def hello():
     return render_template('index.html')
 
-@app.route('/oscar')
-def animation():
+@app.route('/oscars_overall')
+def oscars_overall():
 
-    animation = pd.read_csv('oscars_overall.csv')
-    return jsonify(animation.to_dict(orient="records"))
+    oscars_overall = pd.read_csv('oscars_overall.csv')
+    return jsonify(oscars_overall.to_dict(orient="records"))
 
+    
+@app.route('/oscars/')
+def oscars():
+    oscars = pd.read_csv('oscars.csv')
+    oscars = oscars.to_dict(orient="records")
+
+    return jsonify(oscars)    
+    
+@app.route('/oscars/<year>')
+def oscars_by_year(year):
+    oscars = pd.read_csv('oscars.csv')
+    oscars = oscars.to_dict(orient="records")
+    
+    oscar_list = []
+    
+    for oscar in oscars:
+        if(oscar["Year"] == int(year)):
+            oscar_list.append(oscar)
+
+            
+    return jsonify(oscar_list)
 
 if __name__ == "__main__":
     app.run(debug=True)
