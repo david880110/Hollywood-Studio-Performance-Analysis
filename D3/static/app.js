@@ -9,8 +9,8 @@ function dropdownList() {
     
     //default option on load
     var defaultOption = document.createElement('option');
-    defaultOption.text = 'all_years';
-    defaultOption.value = 'all_years';
+    defaultOption.text = 'overall';
+    defaultOption.value = 'overall';
     selectYear.appendChild(defaultOption);
     
     // Use the list of years from the route to populate the select options
@@ -38,20 +38,29 @@ function optionChanged(year) {
     
     if (isEmpty) {
         oscars_by_year(year);
+        generateOscarTable(year);
     }
         
     else {
         var pieChart = document.getElementById("pieChart");
         pieChart.innerHTML = '';
+        var oscarTable = document.getElementById("oscarTable");
+        oscarTable.innerHTML = '';
+        
+        
         oscars_by_year(year);
+        generateOscarTable(year);
     }
 }   
 
-//Oscars pie charts selected by year
 //Hardcoded due to time constraints
 //not an ideal solution but manageable with this dataset
+//manually inputting the data for the pie charts
 function oscars_by_year(year) {
     switch(year) {
+        case 'overall':    
+            oscars_chart("1990-2017",24,22,19,25,27,33);
+            break;
         case '1990':
             oscars_chart("1990", 1,0,2,1,0,2);
             break;
@@ -92,126 +101,53 @@ function oscars_by_year(year) {
             oscars_chart("2002",0,0,0,0,2,1)
             break;    
         case '2003':
-            oscars_chart("2000",0,0,1,0,5,0)
+            oscars_chart("2003",1,1,0,0,0,2)
             break;
         case '2004':
-            oscars_chart("2000",0,0,1,0,5,0)
+            oscars_chart("2004",0,1,0,1,1,1)
             break;
         case '2005':
-            oscars_chart("2000",0,0,1,0,5,0)
+            oscars_chart("2005",0,1,0,2,1,1)
             break;
         case '2006':
-            oscars_chart("2000",0,0,1,0,5,0)
+            oscars_chart("2006",1,1,1,0,1,2)
             break;    
         case '2007':
-            oscars_chart("2000",0,0,1,0,5,0)
+            oscars_chart("2007",1,1,1,0,1,2)
             break;
         case '2008':
-            oscars_chart("2000",0,0,1,0,5,0)
+            oscars_chart("2008",0,1,1,0,0,1)
             break;      
         case '2009':
-            oscars_chart("2000",0,0,1,0,5,0)
-            break;  
+            oscars_chart("2009",1,1,0,0,0,1)
+            break;
+        case '2010':
+            oscars_chart("2010",2,1,1,1,1,1)
+            break;
+        case '2011':
+            oscars_chart("2011",1,1,0,0,0,1)
+            break;
+        case '2012':
+            oscars_chart("2012",1,1,0,2,2,1)
+            break;
+        case '2013':
+            oscars_chart("2013",1,1,0,1,0,3)
+            break;
+        case '2014':
+            oscars_chart("2014",1,2,2,0,0,1)
+            break;
+        case '2015':
+            oscars_chart("2015",1,1,1,1,1,1)
+            break;
+        case '2016':
+            oscars_chart("2016",2,0,1,0,0,3)
+            break;
+        case '2017':
+            oscars_chart("2017",2,1,0,0,1,2)
+            break;    
         default:
             //console.log(year);
             oscars_chart("1990-2017",24,22,19,25,27,33);
     }
-}
-
-
-function oscars_chart (year, bv_value, fox_value, paramount_value, sony_value, universal_value, wb_value) {
-    data = [
-			{
-				"label": "BV",
-				"value": parseInt(bv_value),
-				"color": "#2484c1"
-			},
-			{
-				"label": "Fox",
-				"value": parseInt(fox_value),
-				"color": "#0c6197"
-			},
-			{
-				"label": "Paramount",
-				"value": parseInt(paramount_value),
-				"color": "#4daa4b"
-			},
-			{
-				"label": "Sony",
-				"value": parseInt(sony_value),
-				"color": "#90c469"
-			},
-			{
-				"label": "Universal",
-				"value": parseInt(universal_value),
-				"color": "#daca61"
-			},
-			{
-				"label": "WB",
-				"value": parseInt(wb_value),
-				"color": "#e4a14b"
-			}
-		]
-    var pie = new d3pie("pieChart", {
-	"header": {
-		"title": {
-			"text": "Oscar Winners by Studio (" + year + ")",
-			"fontSize": 24,
-			"font": "open sans"
-		},
-	},
-	"footer": {
-		"color": "#999999",
-		"fontSize": 10,
-		"font": "open sans",
-		"location": "bottom-left"
-	},
-	"size": {
-		"canvasWidth": 590,
-		"pieOuterRadius": "90%"
-	},
-	"data": {
-		"sortOrder": "value-desc",
-		"content": data
-	},
-	"labels": {
-		"outer": {
-			"pieDistance": 32
-		},
-		"inner": {
-			"hideWhenLessThanPercentage": 3
-		},
-		"mainLabel": {
-			"fontSize": 11
-		},
-		"percentage": {
-			"color": "#ffffff",
-			"decimalPlaces": 0
-		},
-		"value": {
-			"color": "#adadad",
-			"fontSize": 11
-		},
-		"lines": {
-			"enabled": true
-		},
-		"truncation": {
-			"enabled": true
-		}
-	},
-	"effects": {
-		"pullOutSegmentOnClick": {
-			"effect": "linear",
-			"speed": 400,
-			"size": 8
-		}
-	},
-	"misc": {
-		"gradient": {
-			"enabled": true,
-			"percentage": 100
-		}
-	}
-});
 }
 
