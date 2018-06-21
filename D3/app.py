@@ -1,15 +1,30 @@
 from flask import Flask, render_template, jsonify
-from flask_cors import CORS, cross_origin
 import pandas as pd
 
 app = Flask(__name__)
-CORS(app)
-
-cors = CORS(app, resources={r"/foo": {"origins": "http://localhost:port"}})
 
 @app.route('/')
 def hello():
     return render_template('index.html')
+
+#when consolidating flask code DO NOT DELETE THIS ROUTE
+#the drop down list for the years for the Oscar pie charts depends on this
+@app.route('/years')
+def years():
+    oscars = pd.read_csv('oscars.csv')
+    oscars = oscars.to_dict(orient="records")
+    
+    year_list = []
+    unique_list = []
+    
+    for oscar in oscars:
+        year_list.append(oscar["Year"])
+
+    for year in year_list:
+        if year not in unique_list:
+            unique_list.append(year)
+    
+    return jsonify(unique_list)
 
 @app.route('/oscars_overall')
 def oscars_overall():
@@ -39,22 +54,6 @@ def oscars_by_year(year):
             
     return jsonify(oscar_list)
 
-@app.route('/years')
-def years():
-    oscars = pd.read_csv('oscars.csv')
-    oscars = oscars.to_dict(orient="records")
-    
-    year_list = []
-    unique_list = []
-    
-    for oscar in oscars:
-        year_list.append(oscar["Year"])
-
-    for year in year_list:
-        if year not in unique_list:
-            unique_list.append(year)
-    
-    return jsonify(unique_list)
     
 if __name__ == "__main__":
     app.run(debug=True)
