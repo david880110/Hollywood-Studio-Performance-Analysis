@@ -1,7 +1,7 @@
-# DatAverangers Hollywood Studio Performance Analysis
+# Hollywood Studio Performance Analysis
 
 ![alt text](http://www.mormontransitions.org/wp-content/uploads/2015/12/Movie-making4.jpg)
-## Members:
+## DatAvengers Members:
 You can click into our Linkedins
 -   [David Gu](https://www.linkedin.com/in/thatmandavid-gu-a0806b5a/)
 -   [Lindsay Yan](https://www.linkedin.com/in/lindsay-yan-8a09469b/)
