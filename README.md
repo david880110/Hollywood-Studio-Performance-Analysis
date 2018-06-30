@@ -88,7 +88,7 @@ The top Gross movies usually do not have very good Rotten Tomatoes scores, the h
 
 By taking the example of Avengers, we found out that North America has the greatest box office opportunities for Hollywood movies. China is the second largest market outside of North America. This is a clear sign for the big 6 studios to market in China in order to achieve higher box office internationally.
 
-
+![alt text](https://raw.githubusercontent.com/david880110/Hollywood-Studio-Performance-Analysis/master/image/mapping.png)
 
 
 ## Limitations 
