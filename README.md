@@ -72,7 +72,7 @@ After the data is pulled, we integrated all data into sqlite for plots and visua
 Once the plots are ready, we embedded them into our homepage (designed using HTML, Bootstrap,css, nextparticle javascript library, Google Fonts)
 
 
-# Technology Used
+## Technology Used
 
 -   SQL
 -   Python
