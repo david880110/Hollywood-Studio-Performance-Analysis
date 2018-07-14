@@ -81,7 +81,7 @@ Once the plots are ready, we embedded them into our homepage (designed using HTM
 
 <img src="https://raw.githubusercontent.com/david880110/tech-logo/master/web%20dev%20tech%20logo.jpeg" width="200" height="80"/>
 
-<img src="https://raw.githubusercontent.com/david880110/tech-logo/master/leaflet%20logo.gif" width="260" height="80"/>
+<img src="https://raw.githubusercontent.com/david880110/tech-logo/master/leaflet%20logo.gif" width="290" height="80"/>
 
 ## Findings 
 
