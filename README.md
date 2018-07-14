@@ -43,7 +43,7 @@ The questions we are trying to answer are:
 ## Data Source
 ### 
 
-<img src="https://pbs.twimg.com/media/C4PrQIzUcAAPwFx.jpg" width="300" height="150"/>
+<img src="https://pbs.twimg.com/media/C4PrQIzUcAAPwFx.jpg" width="240" height="50"/>
 
 Founded in 1999, Box Office Mojo tracks box office revenue in a systematic, algorithmic  way, and publishes the data on its website. In 2008 IMDb , owned by Amazon, purchased Box Office Mojo. The website is widely used within the film industry as a source of data. From 2002–11, Box Office Mojo maintained popular forums on its website.
 
@@ -55,7 +55,7 @@ Rotten Tomatoes  is an American  review-aggregation website  for film and televi
 
 ###
 
-<img src="https://www.programmableweb.com/sites/default/files/styles/facebook_scale_height_200/public/OMDb%20API.png?itok=9pgYjYe1" width="300" height="150"/>
+<img src="https://www.programmableweb.com/sites/default/files/styles/facebook_scale_height_200/public/OMDb%20API.png?itok=9pgYjYe1" width="240" height="50"/>
 
 The OMDb API is a RESTful web service to obtain movie information, all content and images on the site are contributed and maintained by our users. 
 
