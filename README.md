@@ -2,7 +2,7 @@
 
 ![alt text](http://www.mormontransitions.org/wp-content/uploads/2015/12/Movie-making4.jpg)
 
-## Contributors:
+## Contributors (In Alphabetical Order):
 
 -   [David Gu](https://www.linkedin.com/in/thatmandavid-gu-a0806b5a/)
 -   [Lindsay Yan](https://www.linkedin.com/in/lindsay-yan-8a09469b/)
