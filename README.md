@@ -75,8 +75,10 @@ Once the plots are ready, we embedded them into our homepage (designed using HTM
 
 ## Technology Used
 
--   SQL
--   Python
+<img src="https://raw.githubusercontent.com/david880110/tech-logo/master/python%20logo.png" width="240" height="50"/>
+
+<img src="https://raw.githubusercontent.com/david880110/tech-logo/master/sqlite%20logo.png" width="240" height="80"/>
+
 -   Javascrpit
 -   html/css/leaflet
 
