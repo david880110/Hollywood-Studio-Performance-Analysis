@@ -79,7 +79,7 @@ Once the plots are ready, we embedded them into our homepage (designed using HTM
 
 <img src="https://raw.githubusercontent.com/david880110/tech-logo/master/sqlite%20logo.png" width="240" height="80"/>
 
-<img src="https://raw.githubusercontent.com/david880110/tech-logo/master/web%20dev%20tech%20logo.jpeg" width="240" height="60"/>
+<img src="https://raw.githubusercontent.com/david880110/tech-logo/master/web%20dev%20tech%20logo.jpeg" width="200" height="80"/>
 
 ## Findings 
 
