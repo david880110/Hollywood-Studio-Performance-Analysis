@@ -85,11 +85,11 @@ Once the plots are ready, we embedded them into our homepage (designed using HTM
 
 ## Findings 
 
-Overall the movie industry is performing in a growing trend over the 27 years. BV is the fastest grower, where it takes up 28% of the marketshare among all Big studios in 2017. We can tell that BV is really into making great movies. No matter the box office or Rotten Tomatoes scores, BV has been at the top of the chart for recent years. 
+(1) Overall the movie industry is performing in a growing trend over the 27 years. BV is the fastest grower, where it takes up 28% of the marketshare among all Big studios in 2017. We can tell that BV is really into making great movies. No matter the box office or Rotten Tomatoes scores, BV has been at the top of the chart for recent years. 
 
-The top Gross movies usually do not have very good Rotten Tomatoes scores, the high Rotten Tomatoes scores movies are usually low in terms of revenue, therefore we found the negative correlation between box office and Rotten Tomatoes scores. but BV is trying to break this norm by producing a lot of the high quality movies that perform highly on both scales in recent years.
+(2) The top Gross movies usually do not have very good Rotten Tomatoes scores, the high Rotten Tomatoes scores movies are usually low in terms of revenue, therefore we found the negative correlation between box office and Rotten Tomatoes scores. but BV is trying to break this norm by producing a lot of the high quality movies that perform highly on both scales in recent years.
 
-By taking the example of Avengers, we found out that North America has the greatest box office opportunities for Hollywood movies. China is the second largest market outside of North America. This is a clear sign for the big 6 studios to market in China in order to achieve higher box office internationally.
+(3) By taking the example of Avengers, we found out that North America has the greatest box office opportunities for Hollywood movies. China is the second largest market outside of North America. This is a clear sign for the big 6 studios to market in China in order to achieve higher box office internationally.
 
 ![alt text](https://raw.githubusercontent.com/david880110/Hollywood-Studio-Performance-Analysis/master/image/mapping.png)
 
