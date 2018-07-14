@@ -81,6 +81,8 @@ Once the plots are ready, we embedded them into our homepage (designed using HTM
 
 <img src="https://raw.githubusercontent.com/david880110/tech-logo/master/web%20dev%20tech%20logo.jpeg" width="200" height="80"/>
 
+<img src="https://raw.githubusercontent.com/david880110/tech-logo/master/leaflet%20logo.gif" width="240" height="80"/>
+
 ## Findings 
 
 Overall the movie industry is performing in a growing trend over the 27 years. BV is the fastest grower, where it takes up 28% of the marketshare among all Big studios in 2017. We can tell that BV is really into making great movies. No matter the box office or Rotten Tomatoes scores, BV has been at the top of the chart for recent years. 
