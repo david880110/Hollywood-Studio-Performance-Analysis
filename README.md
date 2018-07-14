@@ -72,17 +72,6 @@ After the data is pulled, we integrated all data into sqlite for plots and visua
 
 Once the plots are ready, we embedded them into our homepage (designed using HTML, Bootstrap,css, nextparticle javascript library, Google Fonts)
 
-
-## Technology Used
-
-<img src="https://raw.githubusercontent.com/david880110/tech-logo/master/python%20logo.png" width="240" height="50"/>
-
-<img src="https://raw.githubusercontent.com/david880110/tech-logo/master/sqlite%20logo.png" width="240" height="80"/>
-
-<img src="https://raw.githubusercontent.com/david880110/tech-logo/master/web%20dev%20tech%20logo.jpeg" width="240" height="80"/>
-
-<img src="https://raw.githubusercontent.com/david880110/tech-logo/master/leaflet%20logo.gif" width="240" height="100"/>
-
 ## Findings 
 
 (1) Overall the movie industry is performing in a growing trend over the 27 years. BV is the fastest grower, where it takes up 28% of the marketshare among all Big studios in 2017. We can tell that BV is really into making great movies. No matter the box office or Rotten Tomatoes scores, BV has been at the top of the chart for recent years. 
@@ -99,8 +88,15 @@ The biggest challenge is the time constraint, if given more time, we will be abl
 
 The second limitation is the amount of data we have, if we could have access to their investment into the movies, we can perform some other interesting analysis 
 
+## Technology Used
 
+<img src="https://raw.githubusercontent.com/david880110/tech-logo/master/python%20logo.png" width="240" height="50"/>
 
+<img src="https://raw.githubusercontent.com/david880110/tech-logo/master/sqlite%20logo.png" width="240" height="80"/>
+
+<img src="https://raw.githubusercontent.com/david880110/tech-logo/master/web%20dev%20tech%20logo.jpeg" width="240" height="80"/>
+
+<img src="https://raw.githubusercontent.com/david880110/tech-logo/master/leaflet%20logo.gif" width="240" height="100"/>
 
 ## Next Steps
 
