@@ -43,7 +43,7 @@ The questions we are trying to answer are:
 ## Data Source
 
 ### 
-<img src="http://nopulseproductions.weebly.com/uploads/6/0/6/3/60633445/1873234.jpg?841" width="240" height="80"/>
+<img src="http://nopulseproductions.weebly.com/uploads/6/0/6/3/60633445/1873234.jpg?841" width="240" height="100"/>
 
 Founded in 1999, Box Office Mojo tracks box office revenue in a systematic, algorithmic  way, and publishes the data on its website. In 2008 IMDb , owned by Amazon, purchased Box Office Mojo. The website is widely used within the film industry as a source of data. From 2002–11, Box Office Mojo maintained popular forums on its website.
 
