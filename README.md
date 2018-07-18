@@ -98,6 +98,8 @@ The second limitation is the amount of data we have, if we could have access to 
 
 <img src="https://raw.githubusercontent.com/david880110/tech-logo/master/leaflet%20logo.gif" width="240" height="100"/>
 
+<img src="https://camo.githubusercontent.com/374f4b395383ef4728c1bb7a1622c30a60c968dc/68747470733a2f2f66696c6573746f72652e6861737572612e696f2f76312f66696c652f65653138343866352d396630342d343062612d396439372d363033343262613764363733" width="240" height="100"/>
+
 ## Next Steps
 
 If given the investment data, we can perform ROI analysis for movie studios to see which studios make the most revenue other than gross revenue 
