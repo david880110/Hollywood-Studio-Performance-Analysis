@@ -1,4 +1,24 @@
-# Hollywood Studio Performance Analysis
+![built with D3](https://img.shields.io/badge/built%20with-D3-yellow.svg)
+
+![built with HTML5](https://img.shields.io/badge/built%20with-HTML5-yellowgreen.svg)
+
+[![built with javascript](https://img.shields.io/badge/built%20with-javascript-brightgreen.svg)](https://www.python.org/)
+
+![built with Python3](https://img.shields.io/badge/built%20with-Python3-red.svg)
+
+<h1 align="center"> Hollywood Studio Performance Analysis </h1>
+
+<p align="center"> Studios Performance in Past Two Decades </p>
+
+<div align="center">
+
+:movie_camera:
+
+</div>
+
+
+
+---
 
 ![alt text](http://www.mormontransitions.org/wp-content/uploads/2015/12/Movie-making4.jpg)
 
@@ -13,7 +33,7 @@
 ## Background 
 
 Our group is trying to compare the performance of movies that are produced in the past 27 years (1990 -2017 ) by total gross (US only), Rotten Tomato Scores, Oscar winning movie numbers by the biggest 6 studios. 
- 
+
  - Disney (BV)
  - Warner Brothers (WB)
  - Paramount 
