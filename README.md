@@ -63,7 +63,7 @@ The questions we are trying to answer are:
 ## Data Source
 
 ### 
-<img src="https://pbs.twimg.com/media/C4PrQIzUcAAPwFx.jpg" width="240" height="80"/>
+<img src="http://nopulseproductions.weebly.com/uploads/6/0/6/3/60633445/1873234.jpg?841" width="250" height="80"/>
 
 Founded in 1999, Box Office Mojo tracks box office revenue in a systematic, algorithmic  way, and publishes the data on its website. In 2008 IMDb , owned by Amazon, purchased Box Office Mojo. The website is widely used within the film industry as a source of data. From 2002–11, Box Office Mojo maintained popular forums on its website.
 
@@ -117,6 +117,8 @@ The second limitation is the amount of data we have, if we could have access to 
 <img src="https://raw.githubusercontent.com/david880110/tech-logo/master/web%20dev%20tech%20logo.jpeg" width="240" height="80"/>
 
 <img src="https://raw.githubusercontent.com/david880110/tech-logo/master/leaflet%20logo.gif" width="240" height="100"/>
+
+<img src="https://camo.githubusercontent.com/374f4b395383ef4728c1bb7a1622c30a60c968dc/68747470733a2f2f66696c6573746f72652e6861737572612e696f2f76312f66696c652f65653138343866352d396630342d343062612d396439372d363033343262613764363733" width="240" height="100"/>
 
 ## Next Steps
 
