@@ -11,9 +11,7 @@
 <p align="center"> Studios Performance in Past Two Decades </p>
 
 <div align="center">
-
 :movie_camera:
-
 </div>
 
 
@@ -30,16 +28,16 @@
 -   [Sonia Yang](https://www.linkedin.com/in/sonia-yang-69504438/)
 -   [Tsering Sherpa](https://www.linkedin.com/in/tsering-sherpa-1171a7b4/)
 
-## Background 
+## Background
 
-Our group is trying to compare the performance of movies that are produced in the past 27 years (1990 -2017 ) by total gross (US only), Rotten Tomato Scores, Oscar winning movie numbers by the biggest 6 studios. 
+Our group is trying to compare the performance of movies that are produced in the past 27 years (1990 -2017 ) by total gross (US only), Rotten Tomato Scores, Oscar winning movie numbers by the biggest 6 studios.
 
  - Disney (BV)
  - Warner Brothers (WB)
- - Paramount 
- - Fox 
- - Universal 
- - Sony 
+ - Paramount
+ - Fox
+ - Universal
+ - Sony
 
 The questions we are trying to answer are:
 1. Is there a clear trend for box office, quality of movies (Rotten Tomato scores), and Oscar winning?
@@ -47,13 +45,13 @@ The questions we are trying to answer are:
 3. Who are the biggest players in each of the fields?
 
 
-## Proposal 
+## Proposal
 
 
--   Find out the market share of each studio over 27 years of time 
+-   Find out the market share of each studio over 27 years of time
 -   Find out how many oscar winning movies over time, and compare between the studios
 -  Find out whether there are correlations between box office and Rotten Tomato scores by genre
--   Since we all love avengers, plot out the box office of the 3 Avengers movies to illustrate the movie series' performance globally 
+-   Since we all love avengers, plot out the box office of the 3 Avengers movies to illustrate the movie series' performance globally
 
 
 
@@ -62,7 +60,7 @@ The questions we are trying to answer are:
 
 ## Data Source
 
-### 
+###
 <img src="http://nopulseproductions.weebly.com/uploads/6/0/6/3/60633445/1873234.jpg?841" width="250" height="80"/>
 
 Founded in 1999, Box Office Mojo tracks box office revenue in a systematic, algorithmic  way, and publishes the data on its website. In 2008 IMDb , owned by Amazon, purchased Box Office Mojo. The website is widely used within the film industry as a source of data. From 2002–11, Box Office Mojo maintained popular forums on its website.
@@ -77,24 +75,24 @@ Rotten Tomatoes  is an American  review-aggregation website  for film and televi
 
 <img src="https://www.programmableweb.com/sites/default/files/styles/facebook_scale_height_200/public/OMDb%20API.png?itok=9pgYjYe1" width="240" height="80"/>
 
-The OMDb API is a RESTful web service to obtain movie information, all content and images on the site are contributed and maintained by our users. 
+The OMDb API is a RESTful web service to obtain movie information, all content and images on the site are contributed and maintained by our users.
 
 
 
-## Process 
+## Process
 
 
 First we scraped Box Office Mojo website to get the top 100 movies by year (1990- 2017)  by box office (US only) , we also scraped the 3 Avengers box office internationally for geographical visualization.
 
-With the movie titles from Box Office Mojo, we leveraged OMDb API to pull some other information that are related to the movies (Rotten Tomato Scores, genres, directors, etc). 
+With the movie titles from Box Office Mojo, we leveraged OMDb API to pull some other information that are related to the movies (Rotten Tomato Scores, genres, directors, etc).
 
-After the data is pulled, we integrated all data into sqlite for plots and visualizations (We leveraged Ploty, D3 and Leaflet  to realize our plots and visualizations) 
+After the data is pulled, we integrated all data into sqlite for plots and visualizations (We leveraged Ploty, D3 and Leaflet  to realize our plots and visualizations)
 
 Once the plots are ready, we embedded them into our homepage (designed using HTML, Bootstrap,css, nextparticle javascript library, Google Fonts)
 
-## Findings 
+## Findings
 
-(1) Overall the movie industry is performing in a growing trend over the 27 years. BV is the fastest grower, where it takes up 28% of the marketshare among all Big studios in 2017. We can tell that BV is really into making great movies. No matter the box office or Rotten Tomatoes scores, BV has been at the top of the chart for recent years. 
+(1) Overall the movie industry is performing in a growing trend over the 27 years. BV is the fastest grower, where it takes up 28% of the marketshare among all Big studios in 2017. We can tell that BV is really into making great movies. No matter the box office or Rotten Tomatoes scores, BV has been at the top of the chart for recent years.
 
 (2) The top Gross movies usually do not have very good Rotten Tomatoes scores, the high Rotten Tomatoes scores movies are usually low in terms of revenue, therefore we found the negative correlation between box office and Rotten Tomatoes scores. but BV is trying to break this norm by producing a lot of the high quality movies that perform highly on both scales in recent years.
 
@@ -103,10 +101,10 @@ Once the plots are ready, we embedded them into our homepage (designed using HTM
 ![alt text](https://raw.githubusercontent.com/david880110/Hollywood-Studio-Performance-Analysis/master/image/mapping.png)
 
 
-## Limitations 
+## Limitations
 The biggest challenge is the time constraint, if given more time, we will be able to do a much better job.
 
-The second limitation is the amount of data we have, if we could have access to their investment into the movies, we can perform some other interesting analysis 
+The second limitation is the amount of data we have, if we could have access to their investment into the movies, we can perform some other interesting analysis
 
 ## Technology Used
 
@@ -122,6 +120,6 @@ The second limitation is the amount of data we have, if we could have access to 
 
 ## Next Steps
 
-If given the investment data, we can perform ROI analysis for movie studios to see which studios make the most revenue other than gross revenue 
+If given the investment data, we can perform ROI analysis for movie studios to see which studios make the most revenue other than gross revenue
 
 We would also like to explore the box office vs how many theaters are playing and how many showtimes each movie has to calculate some kind of metric for  earnings per show and see which studio has the top average earnings per show
