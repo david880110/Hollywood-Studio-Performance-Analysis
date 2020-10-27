@@ -10,7 +10,7 @@ cffi==1.11.5
 chardet==3.0.4
 citipy==0.0.5
 click==6.7
-cryptography==2.2.2
+cryptography==3.2
 cycler==0.10.0
 decorator==4.3.0
 entrypoints==0.2.3
