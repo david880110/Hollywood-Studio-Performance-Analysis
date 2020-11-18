@@ -43,7 +43,7 @@ multidict==4.3.1
 nbconvert==5.3.1
 nbformat==4.4.0
 nltk==3.3
-notebook==5.4.1
+notebook==6.1.5
 numpy==1.14.3
 pandas==0.22.0
 pandas-datareader==0.6.0
