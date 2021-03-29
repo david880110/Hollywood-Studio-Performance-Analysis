@@ -57,7 +57,7 @@ ptyprocess==0.5.2
 pycosat==0.6.3
 pycparser==2.18
 pygame==1.9.3
-Pygments==2.2.0
+Pygments==2.7.4
 pymongo==3.6.1
 pyOpenSSL==18.0.0
 pyparsing==2.2.0
