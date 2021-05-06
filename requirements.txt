@@ -15,7 +15,7 @@ cycler==0.10.0
 decorator==4.3.0
 entrypoints==0.2.3
 Flask==1.0.2
-Flask-Cors==3.0.6
+Flask-Cors==3.0.9
 Flask-PyMongo==0.5.1
 Flask-SQLAlchemy==2.3.2
 gunicorn==19.8.1
